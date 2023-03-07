@@ -13,7 +13,6 @@ import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
 import com.example.filemanager.R;
-
 import com.example.filemanager.databinding.FragmentImageBinding;
 import com.example.filemanager.modle.Image;
 import com.example.filemanager.ui.adapter.ImageAdapter;
@@ -21,9 +20,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 public class ImageFragment extends Fragment {
-    private FragmentImageBinding binding;
     private final List<Image> listImage = new LinkedList<>();
 
+    FragmentImageBinding binding;
     private ImageAdapter imageAdapter;
     @Nullable
     @Override
@@ -58,7 +57,6 @@ public class ImageFragment extends Fragment {
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
-
       imageAdapter.setListImage(listImage);
 
     }

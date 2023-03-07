@@ -6,10 +6,10 @@
     <data>
 
     </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white">
 
         <ImageView
             android:id="@+id/im_back"
@@ -191,17 +191,18 @@
             android:id="@+id/rc_list_item_file_communication"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintBottom_toTopOf="@+id/tv_see_more"
             app:layout_constraintLeft_toLeftOf="@id/tv_title_phone"
             app:layout_constraintRight_toRightOf="@id/tv_used"
             app:layout_constraintTop_toBottomOf="@+id/tv_file_found"
-            app:layout_constraintBottom_toTopOf="@+id/tv_see_more"
-            android:layout_marginTop="15dp"
-            tools:listitem="@layout/item_file_communication"
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            android:orientation="vertical"
             tools:itemCount="2"
+            tools:listitem="@layout/item_file_communication"
 
             />
+
         <TextView
             android:id="@+id/tv_see_more"
             android:layout_width="wrap_content"
@@ -225,7 +226,6 @@
             app:layout_constraintDimensionRatio="4:1.2"
             app:layout_constraintLeft_toLeftOf="@id/tv_title_phone"
             app:layout_constraintRight_toRightOf="@id/tv_used"
-
             app:layout_constraintTop_toBottomOf="@+id/tv_see_more" />
 
         <ImageView
@@ -282,6 +282,7 @@
             app:layout_constraintLeft_toLeftOf="@+id/im_chplay"
             app:layout_constraintRight_toRightOf="@+id/view_uninstall_apps"
             app:layout_constraintTop_toBottomOf="@+id/tv_line_review_individual_video" />
+
         <TextView
             android:id="@+id/tv_application_data"
             android:layout_width="wrap_content"
