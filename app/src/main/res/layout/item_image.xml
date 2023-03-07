@@ -6,10 +6,14 @@
     <data>
 
     </data>
-
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+<<<<<<< HEAD
         android:layout_height="wrap_content">
+=======
+        android:layout_height="wrap_content"
+        >
+>>>>>>> e0c204b6f72f49f24ea6bfa87b58df57ac89c8ec
 
         <ImageView
             android:id="@+id/im_preview"
@@ -38,20 +42,28 @@
             android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginTop="4dp"
             android:fontFamily="@font/roboto_medium"
             android:text="19/09/2022 1:11CH 665kb"
             android:textColor="#B4B4B4"
             android:textSize="10sp"
+            android:layout_marginTop="4dp"
             app:layout_constraintLeft_toRightOf="@id/im_preview"
+<<<<<<< HEAD
             app:layout_constraintTop_toBottomOf="@+id/tv_name" />
+=======
+            app:layout_constraintTop_toBottomOf="@+id/tv_name"
+           />
+>>>>>>> e0c204b6f72f49f24ea6bfa87b58df57ac89c8ec
 
         <ImageView
             android:id="@+id/im_three_dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginRight="16dp"
+<<<<<<< HEAD
             android:src="@drawable/ic_dot3"
+=======
+>>>>>>> e0c204b6f72f49f24ea6bfa87b58df57ac89c8ec
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
