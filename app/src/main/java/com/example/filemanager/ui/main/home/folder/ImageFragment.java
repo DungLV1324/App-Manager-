@@ -46,22 +46,6 @@ public class ImageFragment extends Fragment {
         binding.listImage.setAdapter(imageAdapter);
     }
     public void initData(){
-<<<<<<< HEAD
-        
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
-
-
-=======
 
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
@@ -74,7 +58,7 @@ public class ImageFragment extends Fragment {
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
       listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
->>>>>>> 6eacf7f1e7776c5d6a435983c0e2ee8e24a5f680
+
       imageAdapter.setListImage(listImage);
 
     }
