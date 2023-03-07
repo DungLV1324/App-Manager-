@@ -30,12 +30,8 @@ public class ImageAdapter extends BaseBindingAdapter<ItemImageBinding> {
     @Override
     public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemImageBinding>.BaseHolder<ItemImageBinding> holder, int position) {
         holder.binding.tvName.setText(listImage.get(position).getNameImage());
-<<<<<<< HEAD
-        holder.binding.tvDate.setText(listImage.get(position).getDate());
-
-=======
         holder.binding.tvDate.setText(listImage.get(position).getDateImage());
->>>>>>> 6eacf7f1e7776c5d6a435983c0e2ee8e24a5f680
+
     }
 
 }
