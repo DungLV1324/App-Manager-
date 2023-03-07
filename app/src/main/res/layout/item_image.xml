@@ -9,54 +9,48 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:background="@color/white"
         android:layout_height="wrap_content"
         android:padding="15dp"
         >
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl1"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintGuide_percent="0.13" />
+
         <ImageView
             android:id="@+id/im_preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:padding="16dp"
-            android:src="@drawable/ic_frame"
+            android:src="@drawable/ic_zip"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/tv_name"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
-<<<<<<< HEAD
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/rb_regular"
-            android:text="2022-05-20_17.png"
-            android:textSize="12sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/tv_date"
-            app:layout_constraintLeft_toRightOf="@id/im_preview"
-=======
             android:layout_height="0dp"
-            android:textColor="@color/black"
-            android:fontFamily="@font/rb_regular"
-            android:textStyle="bold"
+            android:fontFamily="@font/roboto_medium"
             android:text="2022-05-20_17.png"
             android:textSize="12sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toTopOf="@+id/tv_date"
             app:layout_constraintLeft_toLeftOf="@id/gl1"
->>>>>>> 6eacf7f1e7776c5d6a435983c0e2ee8e24a5f680
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_date"
             android:layout_width="wrap_content"
             android:layout_height="0dp"
-            android:layout_marginTop="4dp"
             android:fontFamily="@font/roboto_medium"
             android:text="19/09/2022 1:11CH 665kb"
             android:textColor="#B4B4B4"
             android:textSize="10sp"
-            app:layout_constraintLeft_toRightOf="@id/im_preview"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@id/gl1"
             app:layout_constraintTop_toBottomOf="@+id/tv_name"
             tools:ignore="SmallSp" />
 
@@ -65,10 +59,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_dot3"
-            android:layout_marginRight="16dp"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
