@@ -7,19 +7,21 @@ import android.view.ViewGroup;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.databinding.DataBindingUtil;
 import androidx.fragment.app.Fragment;
 
 import com.example.filemanager.R;
 
+import com.example.filemanager.databinding.FragmentImageBinding;
 import com.example.filemanager.modle.Image;
 import com.example.filemanager.ui.adapter.ImageAdapter;
 import java.util.LinkedList;
 import java.util.List;
 
 public class ImageFragment extends Fragment {
+    private FragmentImageBinding binding;
     private final List<Image> listImage = new LinkedList<>();
 
-    Fra  binding;
     private ImageAdapter imageAdapter;
     @Nullable
     @Override
@@ -41,17 +43,19 @@ public class ImageFragment extends Fragment {
     }
     public void initData(){
         
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+      listImage.add(new Image("ackgroundcolorfuldobeautiful.png","1"));
+
+
       imageAdapter.setListImage(listImage);
 
     }
