@@ -62,5 +62,4 @@ public class ImageFragment extends Fragment {
       imageAdapter.setListImage(listImage);
 
     }
-
 }
