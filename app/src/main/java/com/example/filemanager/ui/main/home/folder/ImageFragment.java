@@ -32,8 +32,8 @@ public class ImageFragment extends Fragment {
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
-        initAdapter();
-        initData();
+//        initAdapter();
+//        initData();
     }
 
     public void initAdapter(){
