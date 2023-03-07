@@ -17,4 +17,6 @@
     <string name="tv_batman_mp4">The Batman.mp4</string>
     <string name="tv_batman_apk">The Batman.apk</string>
     <string name="application_data">Application data</string>
+    <string name="apkk">APK</string>
+    <string name="apKK">APK</string>
 </resources>
