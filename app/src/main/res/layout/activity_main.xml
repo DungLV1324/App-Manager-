@@ -11,5 +11,12 @@
         android:layout_height="match_parent"
         tools:context=".ui.main.home.MainActivity">
 
+        <androidx.fragment.app.FragmentContainerView
+            android:id="@+id/fragmentContainerView"
+            android:name="com.example.filemanager.ui.main.home.folder.ImageFragment"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="MissingConstraints"
+            tools:layout="@layout/fragment_image" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

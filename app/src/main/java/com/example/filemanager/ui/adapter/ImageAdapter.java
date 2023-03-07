@@ -12,6 +12,12 @@ import java.util.List;
 
 public class ImageAdapter extends BaseBindingAdapter<ItemImageBinding> {
   List<Image> listImage=new LinkedList<>();
+
+    public void setListImage(List<Image> listImage) {
+        this.listImage.clear();
+        this.listImage.addAll(listImage);
+        notifyDataSetChanged();    }
+
     @Override
     public int layoutIdItem() {
         return R.layout.item_image;
@@ -27,4 +33,5 @@ public class ImageAdapter extends BaseBindingAdapter<ItemImageBinding> {
         holder.binding.tvName.setText(listImage.get(position).getNameImage());
         holder.binding.tvDate.setText(listImage.get(position).getDate());
     }
+
 }

@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.ItemImageBinding;
+import com.example.filemanager.databinding.ItemVideoBinding;
 import com.example.filemanager.modle.Image;
 import com.example.filemanager.modle.Video;
 import com.example.filemanager.ui.base.BaseBindingAdapter;
@@ -11,7 +12,7 @@ import com.example.filemanager.ui.base.BaseBindingAdapter;
 import java.util.LinkedList;
 import java.util.List;
 
-public class VideoAdapter extends BaseBindingAdapter<ItemImageBinding> {
+public class VideoAdapter extends BaseBindingAdapter<ItemVideoBinding> {
   List<Video> listVideo=new LinkedList<>();
     @Override
     public int layoutIdItem() {
@@ -24,7 +25,7 @@ public class VideoAdapter extends BaseBindingAdapter<ItemImageBinding> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemImageBinding>.BaseHolder<ItemImageBinding> holder, int position) {
+    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemVideoBinding>.BaseHolder<ItemVideoBinding> holder, int position) {
         holder.binding.tvName.setText(listVideo.get(position).getNameVideo());
         holder.binding.tvDate.setText(listVideo.get(position).getDateVideo());
     }

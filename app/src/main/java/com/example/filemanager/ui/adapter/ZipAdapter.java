@@ -4,6 +4,7 @@ import androidx.annotation.NonNull;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.ItemImageBinding;
+import com.example.filemanager.databinding.ItemZipBinding;
 import com.example.filemanager.modle.Image;
 import com.example.filemanager.modle.Zip;
 import com.example.filemanager.ui.base.BaseBindingAdapter;
@@ -11,7 +12,7 @@ import com.example.filemanager.ui.base.BaseBindingAdapter;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ZipAdapter extends BaseBindingAdapter<ItemImageBinding> {
+public class ZipAdapter extends BaseBindingAdapter<ItemZipBinding> {
   List<Zip> listZip=new LinkedList<>();
     @Override
     public int layoutIdItem() {
@@ -24,7 +25,7 @@ public class ZipAdapter extends BaseBindingAdapter<ItemImageBinding> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemImageBinding>.BaseHolder<ItemImageBinding> holder, int position) {
+    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemZipBinding>.BaseHolder<ItemZipBinding> holder, int position) {
         holder.binding.tvName.setText(listZip.get(position).getNameZip());
         holder.binding.tvDate.setText(listZip.get(position).getDateZip());
     }

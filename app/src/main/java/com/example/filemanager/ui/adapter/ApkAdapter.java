@@ -3,6 +3,7 @@ package com.example.filemanager.ui.adapter;
 import androidx.annotation.NonNull;
 
 import com.example.filemanager.R;
+import com.example.filemanager.databinding.ItemApkBinding;
 import com.example.filemanager.databinding.ItemImageBinding;
 import com.example.filemanager.modle.Apk;
 import com.example.filemanager.modle.Image;
@@ -11,7 +12,7 @@ import com.example.filemanager.ui.base.BaseBindingAdapter;
 import java.util.LinkedList;
 import java.util.List;
 
-public class ApkAdapter extends BaseBindingAdapter<ItemImageBinding> {
+public class ApkAdapter extends BaseBindingAdapter<ItemApkBinding> {
   List<Apk> listApk=new LinkedList<>();
     @Override
     public int layoutIdItem() {
@@ -24,7 +25,7 @@ public class ApkAdapter extends BaseBindingAdapter<ItemImageBinding> {
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemImageBinding>.BaseHolder<ItemImageBinding> holder, int position) {
+    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemApkBinding>.BaseHolder<ItemApkBinding> holder, int position) {
         holder.binding.tvName.setText(listApk.get(position).getNameApk());
         holder.binding.tvDate.setText(listApk.get(position).getDateApk());
     }
