@@ -41,6 +41,7 @@ public class ImageFragment extends Fragment {
         binding.listImage.setAdapter(imageAdapter);
     }
     public void initData(){
+        
       listImage.add(new Image("1","1"));
       listImage.add(new Image("1","1"));
       listImage.add(new Image("1","1"));
