@@ -24,8 +24,16 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="7dp"
+<<<<<<< HEAD
             android:text="@string/apk"
             android:fontFamily="@font/roboto_medium"
+=======
+            android:layout_marginTop="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/apK"
+
+            android:textColor="#1B252D"
+>>>>>>> 03d5b17 (add item list video + zip + image +apk and edit adapter Apk Image Video Zip)
             android:textSize="16sp"
             android:textColor="#1B252D"
             app:drawableLeftCompat="@drawable/ic_back"
@@ -52,16 +60,52 @@
             android:id="@+id/im_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+<<<<<<< HEAD
             android:layout_marginStart="10dp"
             android:layout_marginTop="5dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/ic_menu"
             android:text="Ảnh"
             android:textSize="16sp"
+=======
+
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="-15dp"
+            android:src="@drawable/ic_menu"
+>>>>>>> 03d5b17 (add item list video + zip + image +apk and edit adapter Apk Image Video Zip)
             app:layout_constraintLeft_toRightOf="@id/tv_title"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
+<<<<<<< HEAD
+=======
+        <ImageView
+            android:id="@+id/im_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="10dp"
+            android:src="@drawable/ic_search"
+            app:layout_constraintLeft_toRightOf="@id/tv_title"
+            app:layout_constraintRight_toLeftOf="@id/im_menu"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="10dp"
+
+            android:layout_marginEnd="5dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_title"
+            app:layout_constraintTop_toTopOf="parent" />
+>>>>>>> 03d5b17 (add item list video + zip + image +apk and edit adapter Apk Image Video Zip)
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_image"
