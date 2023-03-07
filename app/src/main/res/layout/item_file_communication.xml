@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <View
+            android:id="@+id/view"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:background="@drawable/custom_bg_boder_circle"
+            app:layout_constraintDimensionRatio="4:0.9"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent"/>
+
+        <View
+            android:id="@+id/view_bg_video"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:background="@drawable/custom_bg_video_batman"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+
+            app:layout_constraintLeft_toLeftOf="@+id/im_video_file"
+            app:layout_constraintRight_toRightOf="@id/im_video_file"
+            app:layout_constraintTop_toTopOf="@id/view" />
+
+        <ImageView
+            android:id="@+id/im_video_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="20dp"
+            android:src="@drawable/Video"
+            app:layout_constraintBottom_toBottomOf="@id/view"
+            app:layout_constraintLeft_toLeftOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/view" />
+
+        <TextView
+            android:id="@+id/tv_name_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/tv_batman_mp4"
+            android:textColor="#1B252D"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@id/view_bg_video"
+            app:layout_constraintLeft_toRightOf="@+id/view_bg_video"
+            app:layout_constraintTop_toTopOf="@id/view" />
+
+        <TextView
+            android:id="@+id/tv_total_file_size"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/_6_8gb"
+            android:textColor="#C7C7C7"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintLeft_toLeftOf="@id/tv_name_file"
+            app:layout_constraintTop_toBottomOf="@id/tv_name_file" />
+
+        <ImageView
+            android:id="@+id/im_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:src="@drawable/baseline_more_vert_24"
+
+            app:layout_constraintBottom_toBottomOf="@+id/view"
+            app:layout_constraintRight_toRightOf="@id/view"
+            app:layout_constraintTop_toTopOf="@id/view" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

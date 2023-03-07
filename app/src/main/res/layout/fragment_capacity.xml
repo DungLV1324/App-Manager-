@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -185,144 +186,22 @@
             app:layout_constraintRight_toRightOf="@+id/tv_total_capacity"
             app:layout_constraintTop_toBottomOf="@id/tv_large_file" />
 
-        <View
-            android:id="@+id/view_batman_mp4"
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_list_item_file_communication"
             android:layout_width="0dp"
-            android:layout_height="0dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="@id/tv_title_phone"
+            app:layout_constraintRight_toRightOf="@id/tv_used"
+            app:layout_constraintTop_toBottomOf="@+id/tv_file_found"
+            app:layout_constraintBottom_toTopOf="@+id/tv_see_more"
             android:layout_marginTop="15dp"
-            android:background="@drawable/custom_bg_boder_circle"
-            app:layout_constraintDimensionRatio="4:0.9"
-            app:layout_constraintLeft_toLeftOf="@id/tv_title_phone"
-            app:layout_constraintRight_toRightOf="@id/tv_used"
-            app:layout_constraintTop_toBottomOf="@+id/tv_file_found" />
+            tools:listitem="@layout/item_file_communication"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            android:orientation="vertical"
+            tools:itemCount="2"
 
-        <View
-            android:id="@+id/view_bg_video"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/custom_bg_video_batman"
-            app:layout_constraintBottom_toBottomOf="@id/view_batman_mp4"
-
-            app:layout_constraintLeft_toLeftOf="@+id/im_video_batman"
-            app:layout_constraintRight_toRightOf="@id/im_video_batman"
-            app:layout_constraintTop_toTopOf="@id/view_batman_mp4" />
-
-        <ImageView
-            android:id="@+id/im_video_batman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:src="@drawable/Video"
-            app:layout_constraintBottom_toBottomOf="@id/view_batman_mp4"
-            app:layout_constraintLeft_toLeftOf="@id/view_uninstall_apps"
-            app:layout_constraintTop_toTopOf="@id/view_batman_mp4" />
-
-        <TextView
-            android:id="@+id/tv_batman_mp4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/tv_batman_mp4"
-            android:textColor="#1B252D"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@id/view_bg_video"
-            app:layout_constraintLeft_toRightOf="@+id/view_bg_video"
-            app:layout_constraintTop_toTopOf="@id/view_batman_mp4" />
-
-        <TextView
-            android:id="@+id/tv_total_file_size_mp4"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/roboto_regular"
-            android:text="@string/_6_8gb"
-            android:textColor="#C7C7C7"
-            android:textSize="10sp"
-            app:layout_constraintBottom_toBottomOf="@+id/view_batman_mp4"
-            app:layout_constraintLeft_toLeftOf="@id/tv_batman_mp4"
-            app:layout_constraintTop_toBottomOf="@id/tv_batman_mp4" />
-
-        <ImageView
-            android:id="@+id/im_menu_mp4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:src="@drawable/baseline_more_vert_24"
-
-            app:layout_constraintBottom_toBottomOf="@+id/view_batman_mp4"
-            app:layout_constraintRight_toRightOf="@id/view_batman_mp4"
-            app:layout_constraintTop_toTopOf="@id/view_batman_mp4" />
-
-
-        <View
-            android:id="@+id/view_batman_apk"
-            android:layout_width="0dp"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            android:background="@drawable/custom_bg_boder_circle"
-            app:layout_constraintDimensionRatio="4:0.9"
-            app:layout_constraintLeft_toLeftOf="@id/tv_title_phone"
-            app:layout_constraintRight_toRightOf="@id/tv_used"
-            app:layout_constraintTop_toBottomOf="@+id/view_batman_mp4" />
-
-        <View
-            android:id="@+id/view_bg_document"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:background="@drawable/custom_bg_document_batman"
-            app:layout_constraintBottom_toBottomOf="@id/view_batman_apk"
-
-            app:layout_constraintLeft_toLeftOf="@+id/im_document_batman"
-            app:layout_constraintRight_toRightOf="@id/im_document_batman"
-            app:layout_constraintTop_toTopOf="@id/view_batman_apk" />
-
-        <ImageView
-            android:id="@+id/im_document_batman"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_margin="20dp"
-            android:src="@drawable/document"
-            app:layout_constraintBottom_toBottomOf="@+id/view_batman_apk"
-            app:layout_constraintLeft_toLeftOf="@id/view_uninstall_apps"
-            app:layout_constraintTop_toTopOf="@id/view_batman_apk" />
-
-        <TextView
-            android:id="@+id/tv_batman_apk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="10dp"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/tv_batman_apk"
-            android:textColor="#1B252D"
-            android:textSize="12sp"
-            app:layout_constraintBottom_toBottomOf="@id/view_bg_document"
-            app:layout_constraintLeft_toRightOf="@+id/view_bg_document"
-            app:layout_constraintTop_toTopOf="@id/view_batman_apk" />
-
-        <TextView
-            android:id="@+id/tv_total_file_size_apk"
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
-            android:layout_marginTop="5dp"
-            android:fontFamily="@font/roboto_regular"
-            android:text="@string/_6_8gb"
-            android:textColor="#C7C7C7"
-            android:textSize="10sp"
-            app:layout_constraintBottom_toBottomOf="@id/view_batman_apk"
-            app:layout_constraintLeft_toLeftOf="@id/tv_batman_apk"
-            app:layout_constraintTop_toBottomOf="@id/tv_batman_apk" />
-
-        <ImageView
-            android:id="@+id/im_menu_apk"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginRight="15dp"
-            android:src="@drawable/baseline_more_vert_24"
-            app:layout_constraintBottom_toBottomOf="@+id/view_batman_apk"
-            app:layout_constraintRight_toRightOf="@id/view_batman_apk"
-            app:layout_constraintTop_toTopOf="@id/view_batman_apk" />
-
+            />
         <TextView
             android:id="@+id/tv_see_more"
             android:layout_width="wrap_content"
@@ -332,9 +211,9 @@
             android:text="@string/see_more"
             android:textColor="#2196F3"
             android:textSize="10sp"
-            app:layout_constraintLeft_toLeftOf="@+id/view_batman_apk"
-            app:layout_constraintRight_toRightOf="@id/view_batman_apk"
-            app:layout_constraintTop_toBottomOf="@+id/view_batman_apk" />
+            app:layout_constraintLeft_toLeftOf="@+id/rc_list_item_file_communication"
+            app:layout_constraintRight_toRightOf="@id/rc_list_item_file_communication"
+            app:layout_constraintTop_toBottomOf="@+id/rc_list_item_file_communication" />
 
         <View
             android:id="@+id/view_review_individual_video"
@@ -374,7 +253,7 @@
             android:id="@+id/im_see_more_photo"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/ic_back"
+            android:src="@drawable/chevron_right"
             app:layout_constraintBottom_toBottomOf="@+id/im_photo"
             app:layout_constraintRight_toRightOf="@id/view_review_individual_video"
             app:layout_constraintTop_toTopOf="@id/im_photo" />
@@ -403,6 +282,28 @@
             app:layout_constraintLeft_toLeftOf="@+id/im_chplay"
             app:layout_constraintRight_toRightOf="@+id/view_uninstall_apps"
             app:layout_constraintTop_toBottomOf="@+id/tv_line_review_individual_video" />
+        <TextView
+            android:id="@+id/tv_application_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/application_data"
+            android:textColor="#1B252D"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toLeftOf="@+id/im_back"
+            app:layout_constraintTop_toBottomOf="@+id/view_review_individual_video" />
+
+        <TextView
+            android:id="@+id/tv_total_application_data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="@string/_6_8gb"
+            android:textColor="#C7C7C7"
+            android:textSize="10sp"
+            app:layout_constraintRight_toRightOf="@id/im_search"
+            app:layout_constraintTop_toTopOf="@+id/tv_application_data" />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
