@@ -32,6 +32,7 @@ public class ImageAdapter extends BaseBindingAdapter<ItemImageBinding> {
     public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemImageBinding>.BaseHolder<ItemImageBinding> holder, int position) {
         holder.binding.tvName.setText(listImage.get(position).getNameImage());
         holder.binding.tvDate.setText(listImage.get(position).getDate());
+
     }
 
 }

@@ -56,11 +56,6 @@
             app:layout_constraintBottom_toBottomOf="@id/im_Menu"
             android:layout_marginRight="15dp"
             />
-
-
-
-
-
         <View
             android:id="@+id/view_1"
             android:layout_width="match_parent"

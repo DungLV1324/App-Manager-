@@ -42,17 +42,17 @@ public class ImageFragment extends Fragment {
     }
     public void initData(){
         
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
-      listImage.add(new Image("1","1"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
+      listImage.add(new Image("1/1/2022","1/2/5555"));
       imageAdapter.setListImage(listImage);
 
     }
