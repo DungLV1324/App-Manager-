@@ -5,17 +5,17 @@ public class Image {
     private String nameImage;
     private  String dateImage;
 
-    public String getDate() {
+    public Image(String nameImage, String dateImage) {
+        this.nameImage = nameImage;
+        this.dateImage = dateImage;
+    }
+
+    public String getDateImage() {
         return dateImage;
     }
 
-    public void setDate(String date) {
-        this.dateImage = date;
-    }
-
-    public Image(String nameImage, String date) {
-        this.nameImage = nameImage;
-        this.dateImage = date;
+    public void setDateImage(String dateImage) {
+        this.dateImage = dateImage;
     }
 
     public String getNameImage() {
