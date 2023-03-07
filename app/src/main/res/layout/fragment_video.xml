@@ -51,45 +51,22 @@
         <ImageView
             android:id="@+id/im_menu"
             android:layout_width="wrap_content"
-
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:src="@drawable/ic_menu"
             android:layout_marginEnd="-15dp"
-=======
-<<<<<<< HEAD
             android:layout_marginStart="10dp"
-            android:layout_marginTop="5dp"
-            android:layout_marginEnd="5dp"
             android:src="@drawable/ic_menu"
-            android:text="Ảnh"
             android:textSize="16sp"
-=======
             android:layout_marginTop="10dp"
-            android:layout_marginEnd="-15dp"
-            android:src="@drawable/ic_menu"
->>>>>>> 03d5b17 (add item list video + zip + image +apk and edit adapter Apk Image Video Zip)
->>>>>>> 1e15c5bc4551fc7b0f6d963dfee78a00346b643c
             app:layout_constraintLeft_toRightOf="@id/tv_title"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-=======
->>>>>>> 1e15c5bc4551fc7b0f6d963dfee78a00346b643c
         <ImageView
             android:id="@+id/im_search"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-<<<<<<< HEAD
-            android:layout_marginStart="10dp"
-=======
-
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
->>>>>>> 1e15c5bc4551fc7b0f6d963dfee78a00346b643c
             android:layout_marginEnd="10dp"
             android:src="@drawable/ic_search"
             app:layout_constraintLeft_toRightOf="@id/tv_title"
@@ -99,25 +76,15 @@
         <ImageView
             android:id="@+id/im_back"
             android:layout_width="wrap_content"
-<<<<<<< HEAD
-            android:layout_height="wrap_content"
-            android:layout_marginStart="10dp"
-=======
-
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginTop="10dp"
->>>>>>> 1e15c5bc4551fc7b0f6d963dfee78a00346b643c
             android:layout_marginEnd="5dp"
             android:src="@drawable/ic_back"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_title"
             app:layout_constraintTop_toTopOf="parent" />
 
-<<<<<<< HEAD
-=======
->>>>>>> 03d5b17 (add item list video + zip + image +apk and edit adapter Apk Image Video Zip)
->>>>>>> 1e15c5bc4551fc7b0f6d963dfee78a00346b643c
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_image"
             android:layout_width="0dp"

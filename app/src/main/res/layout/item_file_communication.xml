@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:src="@drawable/Video"
+            android:src="@drawable/video"
             app:layout_constraintBottom_toBottomOf="@id/view"
             app:layout_constraintLeft_toLeftOf="@id/view"
             app:layout_constraintTop_toTopOf="@id/view" />
