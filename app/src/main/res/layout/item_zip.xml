@@ -19,7 +19,6 @@
             android:layout_height="wrap_content"
             android:padding="16dp"
             android:src="@drawable/ic_zip"
-
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_name"
@@ -45,6 +44,7 @@
             android:text="19/09/2022 1:11CH 665kb"
             android:textColor="#B4B4B4"
             android:textSize="10sp"
+            android:layout_marginTop="4dp"
             app:layout_constraintLeft_toRightOf="@id/im_preview"
             app:layout_constraintTop_toBottomOf="@+id/tv_name"
             tools:ignore="SmallSp" />
@@ -54,6 +54,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_dot3"
+            android:layout_marginRight="16dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
