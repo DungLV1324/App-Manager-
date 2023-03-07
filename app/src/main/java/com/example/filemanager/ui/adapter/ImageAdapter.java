@@ -6,16 +6,18 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.ItemImageBinding;
 import com.example.filemanager.modle.Image;
 import com.example.filemanager.ui.base.BaseBindingAdapter;
+
 import java.util.LinkedList;
 import java.util.List;
 
 public class ImageAdapter extends BaseBindingAdapter<ItemImageBinding> {
-  List<Image> listImage=new LinkedList<>();
+    List<Image> listImage = new LinkedList<>();
 
     public void setListImage(List<Image> listImage) {
         this.listImage.clear();
         this.listImage.addAll(listImage);
-        notifyDataSetChanged();    }
+        notifyDataSetChanged();
+    }
 
     @Override
     public int layoutIdItem() {

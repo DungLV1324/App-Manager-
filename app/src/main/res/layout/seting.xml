@@ -9,6 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@color/white"
         android:padding="20dp">
 
         <ImageView
@@ -23,6 +24,7 @@
             />
 
         <TextView
+            android:id="@+id/tv_folder"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/folder"
@@ -249,7 +251,6 @@
             />
 
         <View
-            android:layout_marginTop="10dp"
             android:id="@+id/view_5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -311,6 +312,12 @@
             app:layout_constraintLeft_toLeftOf="@id/view_6"
             app:layout_constraintTop_toTopOf="@id/view_6" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl6"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
 
 
         <ImageView
@@ -349,6 +356,12 @@
             app:layout_constraintLeft_toLeftOf="@id/view_7"
             app:layout_constraintTop_toTopOf="@id/view_7" />
 
+                <androidx.constraintlayout.widget.Guideline
+                    android:id="@+id/gl7"
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    app:layout_constraintGuide_percent="0.85" />
 
 
         <ImageView
@@ -367,9 +380,9 @@
             android:id="@+id/tv_Home"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
             android:text="Home"
             android:textColor="#6552FE"
-            android:fontFamily="@font/roboto_medium"
             android:textSize="11sp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"
@@ -462,6 +475,15 @@
             android:layout_marginBottom="5dp"
             app:layout_constraintBottom_toTopOf="@+id/tv_Setting"
             />
+
+
+
+
+
+
+
+
+
 
 
 
