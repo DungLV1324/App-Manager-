@@ -1,24 +1,35 @@
 package com.example.filemanager.modle;
 
 public class Apk {
-    private String nameImage;
+    private String nameApk;
+    private  String dateApk;
 
-    public Apk(String nameImage) {
-        this.nameImage = nameImage;
+    public String getDateApk() {
+        return dateApk;
     }
 
-    public String getNameImage() {
-        return nameImage;
+    public void setDateApk(String date) {
+        this.dateApk = date;
     }
 
-    public void setNameImage(String nameImage) {
-        this.nameImage = nameImage;
+    public String getNameApk() {
+        return nameApk;
+    }
+
+    public void setNameApk(String nameApk) {
+        this.nameApk = nameApk;
+    }
+
+    public Apk(String nameApk, String dateApk) {
+        this.nameApk = nameApk;
+        this.dateApk = dateApk;
     }
 
     @Override
     public String toString() {
         return "Apk{" +
-                "nameImage='" + nameImage + '\'' +
+                "nameImage='" + nameApk + '\'' +
+                ", dateApk='" + dateApk + '\'' +
                 '}';
     }
 }

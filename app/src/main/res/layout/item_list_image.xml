@@ -26,19 +26,19 @@
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:textSize="12sp"
-            android:fontFamily="@font/roboto"
+            android:fontFamily="@font/roboto_medium"
             android:text="Backgroundcolorfuldobeautiful.png"
             android:textStyle="bold"
-            app:layout_constraintRight_toLeftOf="@id/im_three_dots_verhical"
+            app:layout_constraintRight_toLeftOf="@id/im_three_dots"
             app:layout_constraintTop_toBottomOf="@+id/im_preview"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toBottomOf="parent" />
 
         <ImageView
-            android:id="@+id/im_three_dots_verhical"
+            android:id="@+id/im_three_dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:src="@drawable/three_dots_verhical"
+            android:src="@drawable/ic_dot3"
             app:layout_constraintTop_toBottomOf="@+id/im_preview"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toRightOf="@id/tv_name_image"

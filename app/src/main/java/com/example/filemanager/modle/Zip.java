@@ -2,9 +2,18 @@ package com.example.filemanager.modle;
 
 public class Zip {
     private String nameZip;
+    private String dateZip;
 
-    public Zip(String nameZip) {
+    public Zip(String nameZip, String dateZip) {
         this.nameZip = nameZip;
+        this.dateZip = dateZip;
+    }
+    public String getDateZip() {
+        return dateZip;
+    }
+
+    public void setDateZip(String dateZip) {
+        this.dateZip = dateZip;
     }
 
     public String getNameZip() {
@@ -14,11 +23,11 @@ public class Zip {
     public void setNameZip(String nameZip) {
         this.nameZip = nameZip;
     }
-
     @Override
     public String toString() {
         return "Zip{" +
                 "nameZip='" + nameZip + '\'' +
+                ", dateZip='" + dateZip + '\'' +
                 '}';
     }
 }
