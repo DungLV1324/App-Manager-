@@ -1,4 +1,16 @@
 <resources>
     <string name="app_name">FileManager</string>
     <string name="apk">APK</string>
+    <string name="capaccity">Capaccity</string>
+    <string name="phone">Phone</string>
+    <string name="used">Used 36gb / 72gb</string>
+    <string name="uninstall_apps">Uninstall apps</string>
+    <string name="data_saving_information">The Data Saver feature in Android 7.0 release provides this functionality to users The Data Saver feature in Android 7.0 release provides this functionality to users</string>
+    <string name="large_file">Large file</string>
+    <string name="_6_8gb">6,8GB</string>
+    <string name="file_found">Found 92 files</string>
+    <string name="see_more">See more</string>
+    <string name="review_individual_videos">Review individual videos</string>
+    <string name="tv_batman_mp4">The Batman.mp4</string>
+    <string name="tv_batman_apk">The Batman.apk</string>
 </resources>
