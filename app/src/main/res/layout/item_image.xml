@@ -9,6 +9,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
+        android:background="@color/white"
         android:layout_height="wrap_content"
         android:padding="15dp"
         >
@@ -26,6 +27,7 @@
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
+<<<<<<< HEAD
             android:layout_height="wrap_content"
             android:fontFamily="@font/rb_regular"
             android:text="2022-05-20_17.png"
@@ -33,6 +35,16 @@
             android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@id/tv_date"
             app:layout_constraintLeft_toRightOf="@id/im_preview"
+=======
+            android:layout_height="0dp"
+            android:textColor="@color/black"
+            android:fontFamily="@font/rb_regular"
+            android:textStyle="bold"
+            android:text="2022-05-20_17.png"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toTopOf="@+id/tv_date"
+            app:layout_constraintLeft_toLeftOf="@id/gl1"
+>>>>>>> 6eacf7f1e7776c5d6a435983c0e2ee8e24a5f680
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView

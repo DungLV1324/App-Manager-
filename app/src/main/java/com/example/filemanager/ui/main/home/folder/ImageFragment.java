@@ -1,9 +1,11 @@
 package com.example.filemanager.ui.main.home.folder;
 
+import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -26,6 +28,8 @@ public class ImageFragment extends Fragment {
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         binding = DataBindingUtil.inflate(LayoutInflater.from(getContext()), R.layout.fragment_image, null, false);
+        binding.imSearch.setOnClickListener(v -> {});
+        binding.tvTitle.setOnClickListener(v -> {});
         return binding.getRoot();
     }
 
@@ -41,6 +45,7 @@ public class ImageFragment extends Fragment {
         binding.listImage.setAdapter(imageAdapter);
     }
     public void initData(){
+<<<<<<< HEAD
         
       listImage.add(new Image("1/1/2022","1/2/5555"));
       listImage.add(new Image("1/1/2022","1/2/5555"));
@@ -53,7 +58,22 @@ public class ImageFragment extends Fragment {
       listImage.add(new Image("1/1/2022","1/2/5555"));
       listImage.add(new Image("1/1/2022","1/2/5555"));
       listImage.add(new Image("1/1/2022","1/2/5555"));
+=======
+
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+      listImage.add(new Image("Backgroundcolorfuldobeautiful.png","8/3/2023 10:00  CH 100KB"));
+>>>>>>> 6eacf7f1e7776c5d6a435983c0e2ee8e24a5f680
       imageAdapter.setListImage(listImage);
 
     }
+
 }
