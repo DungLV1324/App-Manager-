@@ -25,7 +25,7 @@
             android:id="@+id/tv_name_image"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:textSize="12sp"
+            android:textSize="13sp"
             android:fontFamily="@font/roboto_medium"
             android:text="Backgroundcolorfuldobeautiful.png"
             android:textStyle="bold"
