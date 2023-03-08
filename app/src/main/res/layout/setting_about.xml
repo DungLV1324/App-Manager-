@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="20dp">
+
+        <ImageView
+            android:id="@+id/im_Back"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="15dp"
+            android:src="@drawable/ic_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/about"
+            android:textColor="#1B252D"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/im_Back"
+            app:layout_constraintLeft_toRightOf="@+id/im_Back"
+            app:layout_constraintTop_toTopOf="@+id/im_Back" />
+
+        <View
+            android:id="@+id/v_view_1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_drawble_view"
+            app:layout_constraintDimensionRatio="328:52"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/im_Back"
+
+            />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Recommendations"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@id/v_view_1"
+            app:layout_constraintLeft_toLeftOf="@id/v_view_1"
+            app:layout_constraintTop_toTopOf="@id/v_view_1" />
+
+        <Switch
+            android:id="@+id/on_on_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="On"
+            android:textOn="OFF"
+            android:checked="true"
+            app:layout_constraintBottom_toBottomOf="@id/v_view_1"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/v_view_1" />
+
+        <View
+            android:id="@+id/v_view2"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_bg_boder_circle"
+            app:layout_constraintDimensionRatio="4:1.2"
+            app:layout_constraintLeft_toLeftOf="@id/v_view_1"
+            app:layout_constraintRight_toRightOf="@id/v_view_1"
+            app:layout_constraintTop_toBottomOf="@+id/v_view_1" />
+
+        <TextView
+            android:id="@+id/tv_agree"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="@string/agree_to_privacy_policy"
+            android:textColor="#1B252D"
+            android:textSize="12sp"
+            android:fontFamily="@font/roboto_medium"
+
+            app:layout_constraintLeft_toLeftOf="@id/v_view2"
+            app:layout_constraintTop_toTopOf="@id/v_view2" />
+
+        <TextView
+            android:id="@+id/tv_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="fhhfhhh vvvvvvvvvvvvvvhhhhhhhhhhhhhhhhhhhhhfjfjjfj"
+            android:textColor="#B4B4B4"
+            android:textSize="11sp"
+            app:layout_constraintLeft_toLeftOf="@id/v_view2"
+            app:layout_constraintTop_toBottomOf="@id/tv_agree"
+            />
+
+        <Switch
+            android:id="@+id/on_off_switch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textOff="OFF"
+            android:textOn="ON"
+            app:layout_constraintBottom_toBottomOf="@id/v_view2"
+            app:layout_constraintRight_toRightOf="@+id/v_view2"
+            app:layout_constraintTop_toTopOf="@+id/v_view2" />
+
+        <View
+            android:id="@+id/v_view3"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/custom_bg_boder_circle"
+            app:layout_constraintDimensionRatio="4:1.2"
+            app:layout_constraintLeft_toLeftOf="@id/v_view2"
+            app:layout_constraintRight_toRightOf="@id/v_view2"
+            app:layout_constraintTop_toBottomOf="@+id/v_view2" />
+
+        <TextView
+            android:id="@+id/tv_agree2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/user_experience_programmer"
+            android:textColor="#1B252D"
+            android:textSize="12sp"
+
+            app:layout_constraintLeft_toLeftOf="@id/v_view3"
+            app:layout_constraintTop_toTopOf="@id/v_view3" />
+
+        <TextView
+            android:id="@+id/tv_text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="fhhfhhh vvvvvvvvvvvvvvhhhhhhhhhhhhhhhhhhhhhfjfjjfj"
+            android:textColor="#B4B4B4"
+            android:textSize="11sp"
+            app:layout_constraintLeft_toLeftOf="@id/v_view3"
+            app:layout_constraintTop_toBottomOf="@id/tv_agree2"
+            />
+
+        <Switch
+            android:id="@+id/on_on_switch2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:textOff="On"
+            android:textOn="ON"
+            app:layout_constraintBottom_toBottomOf="@id/v_view3"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/v_view3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

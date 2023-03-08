@@ -19,4 +19,7 @@
     <string name="application_data">Application data</string>
     <string name="apkk">APK</string>
     <string name="apKK">APK</string>
+    <string name="about">About</string>
+    <string name="agree_to_privacy_policy">Agree to Privacy Policy</string>
+    <string name="user_experience_programmer">User Experience Programmer</string>
 </resources>
