@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <layout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto">
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
 
     <data>
 
@@ -12,480 +13,487 @@
         android:background="@color/white"
         android:padding="20dp">
 
-        <ImageView
-            android:id="@+id/im_Back"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_back"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="15dp"
-            android:layout_marginStart="10dp"
-            />
+        />
 
-        <TextView
-            android:id="@+id/tv_folder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="@string/folder"
-            android:textSize="16sp"
-            android:textColor="#1B252D"
-            android:fontFamily="@font/roboto_medium"
-            app:layout_constraintLeft_toRightOf="@+id/im_Back"
-            app:layout_constraintTop_toTopOf="@+id/im_Back"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@+id/im_Back"
-            />
-
-        <ImageView
-            android:id="@+id/im_Menu"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_menu"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginEnd="10dp"
-            android:layout_marginTop="15dp"
-            />
-
-        <ImageView
-            android:id="@+id/im_Search"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/ic_search"
-            app:layout_constraintRight_toLeftOf="@id/im_Menu"
-            app:layout_constraintTop_toTopOf="@id/im_Menu"
-            app:layout_constraintBottom_toBottomOf="@id/im_Menu"
-            android:layout_marginRight="15dp"
-            />
-
-
-
-
-
-        <View
-            android:id="@+id/view_1"
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@drawable/custom_drawble_view"
-            app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/im_Back"
-            android:layout_marginTop="20dp"
-
-            />
-
-        <TextView
-            android:id="@+id/tv_language"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Ngôn ngữ"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/view_1"
-            app:layout_constraintLeft_toLeftOf="@id/view_1"
-            app:layout_constraintTop_toTopOf="@id/view_1" />
-
-        <androidx.constraintlayout.widget.Guideline
-            android:id="@+id/gl1"
-            android:layout_width="0dp"
-            android:layout_height="match_parent"
-            android:orientation="vertical"
-            app:layout_constraintGuide_percent="0.85"
-            />
-
-        <TextView
-            android:id="@+id/tv_vietnam"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Tiếng Việt"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintRight_toRightOf="@id/gl1"
-            app:layout_constraintBottom_toBottomOf="@id/view_1"
-            app:layout_constraintTop_toTopOf="@id/view_1" />
-
-        <ImageView
-            android:id="@+id/im_chevron1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chevron_right"
-            app:layout_constraintLeft_toLeftOf="@id/gl1"
-            app:layout_constraintTop_toTopOf="@id/view_1"
-            app:layout_constraintBottom_toBottomOf="@id/view_1"
-            app:layout_constraintRight_toRightOf="@id/view_1"
-            />
-
-        <View
             android:layout_marginTop="10dp"
-            android:id="@+id/view_2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@drawable/custom_drawble_view"
+            app:cardCornerRadius="10dp"
             app:layout_constraintDimensionRatio="328:52"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_1" />
+            app:layout_constraintTop_toTopOf="parent">
 
-        <TextView
-            android:id="@+id/FeedBack"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Phản hồi"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/view_2"
-            app:layout_constraintLeft_toLeftOf="@id/view_2"
-            app:layout_constraintTop_toTopOf="@id/view_2" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/im_Back"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="15dp"
+                    android:src="@drawable/ic_back"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_folder"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/roboto_medium"
+                    android:text="@string/folder"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="@+id/im_Back"
+                    app:layout_constraintLeft_toRightOf="@+id/im_Back"
+                    app:layout_constraintTop_toTopOf="@+id/im_Back" />
+
+                <ImageView
+                    android:id="@+id/im_Menu"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_menu"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/im_Search"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="15dp"
+                    android:src="@drawable/ic_search"
+                    app:layout_constraintBottom_toBottomOf="@id/im_Menu"
+                    app:layout_constraintRight_toLeftOf="@id/im_Menu"
+                    app:layout_constraintTop_toTopOf="@id/im_Menu" />
 
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
-        <ImageView
-            android:id="@+id/im_chevron2"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chevron_right"
-            app:layout_constraintLeft_toLeftOf="@id/gl1"
-            app:layout_constraintTop_toTopOf="@id/view_2"
-            app:layout_constraintBottom_toBottomOf="@id/view_2"
-            app:layout_constraintRight_toRightOf="@id/view_2"
-            />
 
-        <View
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
             android:layout_marginTop="10dp"
-            android:id="@+id/view_3"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintDimensionRatio="328:52"
+            app:layout_constraintLeft_toLeftOf="@id/card_view2"
+            app:layout_constraintRight_toRightOf="@id/card_view2"
+            app:layout_constraintTop_toBottomOf="@id/card_view2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_language"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Ngôn ngữ"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <TextView
+                    android:id="@+id/tv_vietnam"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Tiếng Việt"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/im_chevron1"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+                <ImageView
+                    android:id="@+id/im_chevron1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent"
+
+                    />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@drawable/custom_drawble_view"
-            app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_2" />
-
-        <TextView
-            android:id="@+id/tv_Evaluate"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Đánh giá File Manager"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/view_3"
-            app:layout_constraintLeft_toLeftOf="@id/view_3"
-            app:layout_constraintTop_toTopOf="@id/view_3" />
-
-
-
-        <ImageView
-            android:id="@+id/im_chevron3"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chevron_right"
-            app:layout_constraintLeft_toLeftOf="@id/gl1"
-            app:layout_constraintTop_toTopOf="@id/view_3"
-            app:layout_constraintBottom_toBottomOf="@id/view_3"
-            app:layout_constraintRight_toRightOf="@id/view_3"
-            />
-
-        <View
             android:layout_marginTop="10dp"
-            android:id="@+id/view_4"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintDimensionRatio="328:52"
+            app:layout_constraintLeft_toLeftOf="@id/card_view3"
+            app:layout_constraintRight_toRightOf="@id/card_view3"
+            app:layout_constraintTop_toBottomOf="@id/card_view3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/feedback"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Phản hồi"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/im_chevron2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@drawable/custom_drawble_view"
-            app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_3"
-
-            />
-
-        <TextView
-            android:id="@+id/tv_version"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Phiên bản"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/view_4"
-            app:layout_constraintLeft_toLeftOf="@id/view_4"
-            app:layout_constraintTop_toTopOf="@id/view_4" />
-
-
-        <TextView
-            android:id="@+id/tv_v1"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="V1-210553"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintRight_toRightOf="@id/gl1"
-            app:layout_constraintBottom_toBottomOf="@id/view_4"
-            app:layout_constraintTop_toTopOf="@id/view_4" />
-
-        <ImageView
-            android:id="@+id/im_chevron4"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chevron_right"
-            app:layout_constraintLeft_toLeftOf="@id/gl1"
-            app:layout_constraintTop_toTopOf="@id/view_4"
-            app:layout_constraintBottom_toBottomOf="@id/view_4"
-            app:layout_constraintRight_toRightOf="@id/view_4"
-            />
-
-        <View
-            android:id="@+id/view_5"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:background="@drawable/custom_drawble_view"
-            app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_4" />
-
-        <TextView
-            android:id="@+id/tv_introduce"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Giới thiệu"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/view_5"
-            app:layout_constraintLeft_toLeftOf="@id/view_5"
-            app:layout_constraintTop_toTopOf="@id/view_5" />
-
-
-
-        <ImageView
-            android:id="@+id/im_chevron5"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chevron_right"
-            app:layout_constraintLeft_toLeftOf="@id/gl1"
-            app:layout_constraintTop_toTopOf="@id/view_5"
-            app:layout_constraintBottom_toBottomOf="@id/view_5"
-            app:layout_constraintRight_toRightOf="@id/view_5"
-            />
-
-        <View
             android:layout_marginTop="10dp"
-            android:id="@+id/view_6"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintDimensionRatio="328:52"
+            app:layout_constraintLeft_toLeftOf="@id/card_view4"
+            app:layout_constraintRight_toRightOf="@id/card_view4"
+            app:layout_constraintTop_toBottomOf="@id/card_view4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_Evaluate"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Đánh giá File Manager"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/im_chevron3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@drawable/custom_drawble_view"
-            app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_5" />
-
-        <TextView
-            android:id="@+id/tv_share"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Chia sẻ File Manager"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/view_6"
-            app:layout_constraintLeft_toLeftOf="@id/view_6"
-            app:layout_constraintTop_toTopOf="@id/view_6" />
-
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/gl6"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.85" />
-
-
-        <ImageView
-            android:id="@+id/im_chevron6"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chevron_right"
-            app:layout_constraintLeft_toLeftOf="@id/gl1"
-            app:layout_constraintTop_toTopOf="@id/view_6"
-            app:layout_constraintBottom_toBottomOf="@id/view_6"
-            app:layout_constraintRight_toRightOf="@id/view_6"
-            />
-
-        <View
             android:layout_marginTop="10dp"
-            android:id="@+id/view_7"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintDimensionRatio="328:52"
+            app:layout_constraintLeft_toLeftOf="@id/card_view5"
+            app:layout_constraintRight_toRightOf="@id/card_view5"
+            app:layout_constraintTop_toBottomOf="@id/card_view5">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_version"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Phiên bản"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <TextView
+                    android:id="@+id/tv_v1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="V1-210553"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toLeftOf="@id/im_chevron4"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+
+                <ImageView
+                    android:id="@+id/im_chevron4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view7"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:background="@drawable/custom_drawble_view"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/view_6" />
+            app:layout_constraintLeft_toLeftOf="@id/card_view6"
+            app:layout_constraintRight_toRightOf="@id/card_view6"
+            app:layout_constraintTop_toBottomOf="@id/card_view6">
 
-        <TextView
-            android:id="@+id/tv_Policy"
-            android:layout_marginLeft="10dp"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/fontsfree"
-            android:text="Chính sách"
-            android:textColor="#1B252D"
-            android:textSize="16sp"
-            android:textStyle="bold"
-            app:layout_constraintBottom_toBottomOf="@id/view_7"
-            app:layout_constraintLeft_toLeftOf="@id/view_7"
-            app:layout_constraintTop_toTopOf="@id/view_7" />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-                <androidx.constraintlayout.widget.Guideline
-                    android:id="@+id/gl7"
-                    android:layout_width="0dp"
-                    android:layout_height="match_parent"
-                    android:orientation="vertical"
-                    app:layout_constraintGuide_percent="0.85" />
+                <TextView
+                    android:id="@+id/tv_introduce"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Giới thiệu"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
+                <ImageView
+                    android:id="@+id/im_chevron5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
-        <ImageView
-            android:id="@+id/im_chevron7"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/chevron_right"
-            app:layout_constraintLeft_toLeftOf="@id/gl1"
-            app:layout_constraintTop_toTopOf="@id/view_7"
-            app:layout_constraintBottom_toBottomOf="@id/view_7"
-            app:layout_constraintRight_toRightOf="@id/view_7"
-            />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view8"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintDimensionRatio="328:52"
+            app:layout_constraintLeft_toLeftOf="@id/card_view7"
+            app:layout_constraintRight_toRightOf="@id/card_view7"
+            app:layout_constraintTop_toBottomOf="@id/card_view7">
 
-        <TextView
-            android:id="@+id/tv_Home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:fontFamily="@font/roboto_medium"
-            android:text="Home"
-            android:textColor="#6552FE"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/tv_Folder"
-            />
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-        <TextView
-            android:id="@+id/tv_Folder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Folder"
-            android:textColor="#1B252D"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toRightOf="@+id/tv_Home"
-            app:layout_constraintTop_toTopOf="@+id/tv_Home"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/tv_History"
-            />
-
-        <TextView
-            android:id="@+id/tv_History"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="History"
-            android:textColor="#1B252D"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toRightOf="@+id/tv_Folder"
-            app:layout_constraintTop_toTopOf="@+id/tv_Folder"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/tv_Setting"
-
-            />
-
-        <TextView
-            android:id="@+id/tv_Setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Setting"
-            android:textColor="#1B252D"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toRightOf="@+id/tv_History"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tv_History"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
-
-        <ImageView
-            android:id="@+id/im_Home"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/home"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_Home"
-            app:layout_constraintRight_toRightOf="@+id/tv_Home"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Home"
-            />
-
-        <ImageView
-            android:id="@+id/im_Folder"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_folder"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_Folder"
-            app:layout_constraintRight_toRightOf="@+id/tv_Folder"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Folder"
-            />
-
-        <ImageView
-            android:id="@+id/im_History"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_history"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_History"
-            app:layout_constraintRight_toRightOf="@+id/tv_History"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_History"
-            />
-
-        <ImageView
-            android:id="@+id/im_Setting"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_setting"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_Setting"
-            app:layout_constraintRight_toRightOf="@+id/tv_Setting"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Setting"
-            />
+                <TextView
+                    android:id="@+id/tv_share"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Chia sẻ File Manager"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
+                <ImageView
+                    android:id="@+id/im_chevron6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/card_view9"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintDimensionRatio="328:52"
+            app:layout_constraintLeft_toLeftOf="@id/card_view8"
+            app:layout_constraintRight_toRightOf="@id/card_view8"
+            app:layout_constraintTop_toBottomOf="@id/card_view8">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/tv_Policy"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:fontFamily="@font/fontsfree"
+                    android:text="Chính sách"
+                    android:textColor="#1B252D"
+                    android:textSize="16sp"
+                    android:textStyle="bold"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintLeft_toLeftOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:id="@+id/im_chevron7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/chevron_right"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintRight_toRightOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
 
 
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
 
 
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_Home"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/roboto_medium"-->
+        <!--            android:text="Home"-->
+        <!--            android:textColor="#6552FE"-->
+        <!--            android:textSize="11sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintLeft_toLeftOf="parent"-->
+        <!--            app:layout_constraintRight_toLeftOf="@id/tv_Folder" />-->
 
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_Folder"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/roboto_medium"-->
+        <!--            android:text="Folder"-->
+        <!--            android:textColor="#1B252D"-->
+        <!--            android:textSize="11sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintLeft_toRightOf="@+id/tv_Home"-->
+        <!--            app:layout_constraintRight_toLeftOf="@id/tv_History"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/tv_Home" />-->
 
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_History"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/roboto_medium"-->
+        <!--            android:text="History"-->
+        <!--            android:textColor="#1B252D"-->
+        <!--            android:textSize="11sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintLeft_toRightOf="@+id/tv_Folder"-->
+        <!--            app:layout_constraintRight_toLeftOf="@+id/tv_Setting"-->
+        <!--            app:layout_constraintTop_toTopOf="@+id/tv_Folder"-->
 
+        <!--            />-->
+
+        <!--        <TextView-->
+        <!--            android:id="@+id/tv_Setting"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:fontFamily="@font/roboto_medium"-->
+        <!--            android:text="Setting"-->
+        <!--            android:textColor="#1B252D"-->
+        <!--            android:textSize="11sp"-->
+        <!--            app:layout_constraintBottom_toBottomOf="parent"-->
+        <!--            app:layout_constraintLeft_toRightOf="@+id/tv_History"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="@id/tv_History" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/im_Home"-->
+        <!--            android:layout_width="20dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:src="@drawable/home"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/tv_Home"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@+id/tv_Home"-->
+        <!--            app:layout_constraintRight_toRightOf="@+id/tv_Home" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/im_Folder"-->
+        <!--            android:layout_width="20dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:src="@drawable/ic_folder"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/tv_Folder"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@+id/tv_Folder"-->
+        <!--            app:layout_constraintRight_toRightOf="@+id/tv_Folder" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/im_History"-->
+        <!--            android:layout_width="20dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:src="@drawable/ic_history"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/tv_History"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@+id/tv_History"-->
+        <!--            app:layout_constraintRight_toRightOf="@+id/tv_History" />-->
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/im_Setting"-->
+        <!--            android:layout_width="20dp"-->
+        <!--            android:layout_height="20dp"-->
+        <!--            android:layout_marginBottom="5dp"-->
+        <!--            android:src="@drawable/ic_setting"-->
+        <!--            app:layout_constraintBottom_toTopOf="@+id/tv_Setting"-->
+        <!--            app:layout_constraintLeft_toLeftOf="@+id/tv_Setting"-->
+        <!--            app:layout_constraintRight_toRightOf="@+id/tv_Setting" />-->
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
