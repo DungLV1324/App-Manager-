@@ -22,4 +22,9 @@
     <string name="about">About</string>
     <string name="agree_to_privacy_policy">Agree to Privacy Policy</string>
     <string name="user_experience_programmer">User Experience Programmer</string>
+    <string name="copy">Copy</string>
+    <string name="share">Share</string>
+    <string name="starred">Starred</string>
+    <string name="delete">Delete</string>
+    <string name="detail">Detail</string>
 </resources>
