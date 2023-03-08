@@ -35,7 +35,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
-            android:src="@drawable/video"
+            android:src="@drawable/Video"
             app:layout_constraintBottom_toBottomOf="@id/view"
             app:layout_constraintLeft_toLeftOf="@id/view"
             app:layout_constraintTop_toTopOf="@id/view" />
@@ -72,7 +72,8 @@
             android:layout_height="wrap_content"
             android:layout_marginRight="15dp"
             android:src="@drawable/baseline_more_vert_24"
-
+            android:foreground="@drawable/custom_ripple_image"
+            android:clickable="true"
             app:layout_constraintBottom_toBottomOf="@+id/view"
             app:layout_constraintRight_toRightOf="@id/view"
             app:layout_constraintTop_toTopOf="@id/view" />
