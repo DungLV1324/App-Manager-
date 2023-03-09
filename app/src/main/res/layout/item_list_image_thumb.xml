@@ -24,18 +24,11 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
                 <ImageView
-
+                    android:src="@drawable/background_image"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
-                    app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintRight_toRightOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
-            </androidx.constraintlayout.widget.ConstraintLayout>
+               />
         </com.google.android.material.card.MaterialCardView>
 
 
@@ -65,5 +58,4 @@
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-
 </layout>

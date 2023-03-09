@@ -9,7 +9,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:padding="20dp">
+        android:padding="10dp">
 
         <ImageView
             android:id="@+id/im_Back"
@@ -37,6 +37,8 @@
             />
 
         <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="10dp"
+            app:cardElevation="5dp"
             android:id="@+id/card_view1"
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -48,11 +50,10 @@
             android:layout_marginTop="30dp"
             >
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
 
                 <EditText
+
+                    android:layout_margin="10dp"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:gravity="top"
@@ -62,7 +63,6 @@
                     android:textSize="14sp"
                     android:textColorHint="#A5A6AE"/>
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
 
 

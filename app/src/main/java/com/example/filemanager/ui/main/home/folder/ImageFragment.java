@@ -1,11 +1,9 @@
 package com.example.filemanager.ui.main.home.folder;
 
-import android.content.res.TypedArray;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
@@ -14,7 +12,7 @@ import androidx.fragment.app.Fragment;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentImageBinding;
-import com.example.filemanager.modle.Image;
+import com.example.filemanager.model.Image;
 import com.example.filemanager.ui.adapter.ImageAdapter;
 import java.util.LinkedList;
 import java.util.List;

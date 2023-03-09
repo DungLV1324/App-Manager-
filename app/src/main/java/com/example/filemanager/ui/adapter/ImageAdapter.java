@@ -4,7 +4,7 @@ import androidx.annotation.NonNull;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.ItemImageBinding;
-import com.example.filemanager.modle.Image;
+import com.example.filemanager.model.Image;
 import com.example.filemanager.ui.base.BaseBindingAdapter;
 
 import java.util.LinkedList;
