@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.home.images;
+package com.example.filemanager.ui.main.home.home.images;
 
 import android.os.Bundle;
 import android.view.View;

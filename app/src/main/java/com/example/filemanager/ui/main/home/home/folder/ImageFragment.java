@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.home.folder;
+package com.example.filemanager.ui.main.home.home.folder;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

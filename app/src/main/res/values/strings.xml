@@ -36,4 +36,7 @@
     <string name="zip">Zip</string>
     <string name="dowload">Dowload</string>
     <string name="tv_apk">Apk</string>
+    <string name="home">Home</string>
+    <string name="favorite">Favorite</string>
+    <string name="setting">Setting</string>
 </resources>

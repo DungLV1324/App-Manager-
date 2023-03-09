@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.home.trash;
+package com.example.filemanager.ui.main.home.home.trash;
 
 import android.os.Bundle;
 import android.view.View;
