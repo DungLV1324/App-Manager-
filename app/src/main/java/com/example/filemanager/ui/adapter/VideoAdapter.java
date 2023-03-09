@@ -3,10 +3,8 @@ package com.example.filemanager.ui.adapter;
 import androidx.annotation.NonNull;
 
 import com.example.filemanager.R;
-import com.example.filemanager.databinding.ItemImageBinding;
 import com.example.filemanager.databinding.ItemVideoBinding;
-import com.example.filemanager.modle.Image;
-import com.example.filemanager.modle.Video;
+import com.example.filemanager.model.Video;
 import com.example.filemanager.ui.base.BaseBindingAdapter;
 
 import java.util.LinkedList;

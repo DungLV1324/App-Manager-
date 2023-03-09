@@ -1,4 +1,4 @@
-package com.example.filemanager.modle;
+package com.example.filemanager.model;
 
 public class Video {
     private String nameVideo;
