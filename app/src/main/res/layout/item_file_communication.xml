@@ -23,7 +23,7 @@
             android:id="@+id/view_bg_video"
             android:layout_width="50dp"
             android:layout_height="50dp"
-            android:background="@drawable/custom_bg_video_batman"
+            android:background="@drawable/custom_bg_video_color_blue"
             app:layout_constraintBottom_toBottomOf="@id/view"
 
             app:layout_constraintLeft_toLeftOf="@+id/im_video_file"

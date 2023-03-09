@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:tools="http://schemas.android.com/tools"
-    xmlns:android="http://schemas.android.com/apk/res/android"
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     tools:ignore="MissingDefaultResource">
 
     <data>
@@ -14,14 +14,14 @@
 
 
         <ImageView
-android:id="@+id/im_star"
+
+            android:id="@+id/im_star"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:src="@drawable/star"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-
             />
 
         <TextView
@@ -43,7 +43,7 @@ android:id="@+id/im_star"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
-            android:background="#FFF7F0F0"
+            android:background="#D7D7D7"
 
             app:layout_constraintTop_toBottomOf="@+id/im_star"
 
@@ -79,7 +79,8 @@ android:id="@+id/im_star"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
-            android:background="#FFF7F0F0"
+            android:background="#D7D7D7"
+
             app:layout_constraintTop_toBottomOf="@+id/im_ic_share"
 
             />
@@ -114,7 +115,8 @@ android:id="@+id/im_star"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
-            android:background="#FFF7F0F0"
+            android:background="#D7D7D7"
+
             app:layout_constraintTop_toBottomOf="@+id/im_ic_copy"
 
             />
@@ -149,7 +151,8 @@ android:id="@+id/im_star"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
-            android:background="#FFF7F0F0"
+            android:background="#D7D7D7"
+
             app:layout_constraintTop_toBottomOf="@+id/im_ic_detail"
 
             />
@@ -184,9 +187,8 @@ android:id="@+id/im_star"
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
-            android:background="#FFF7F0F0"
+            android:background="#D7D7D7"
             app:layout_constraintTop_toBottomOf="@+id/im_ic_delete"
-
             />
 
 
