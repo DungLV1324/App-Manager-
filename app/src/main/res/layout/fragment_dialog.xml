@@ -68,7 +68,7 @@
             android:fontFamily="@font/roboto_regular"
 
             android:text="@string/share"
-            android:textColor="1B252D"
+            android:textColor="#1B252D"
             android:textSize="14sp"
             app:layout_constraintBottom_toBottomOf="@id/im_ic_share"
             app:layout_constraintLeft_toRightOf="@+id/im_ic_share"
