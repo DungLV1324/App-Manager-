@@ -7,10 +7,10 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentVideoBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 
-public class VideosFrag extends BaseBindingFragment<FragmentVideoBinding,VideosVM> {
+public class VideosFragment extends BaseBindingFragment<FragmentVideoBinding, VideosViewModel> {
     @Override
-    protected Class<VideosVM> getViewModel() {
-        return VideosVM.class;
+    protected Class<VideosViewModel> getViewModel() {
+        return VideosViewModel.class;
     }
 
     @Override

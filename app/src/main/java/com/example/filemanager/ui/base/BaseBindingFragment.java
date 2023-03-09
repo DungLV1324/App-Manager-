@@ -13,7 +13,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.tfmmusic.ui.main.MainViewModel;
+import com.example.filemanager.ui.main.home.MainViewModel;
 
 
 public abstract class BaseBindingFragment<B extends ViewDataBinding, T extends BaseViewModel> extends BaseFragment {

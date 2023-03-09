@@ -13,6 +13,7 @@ import androidx.fragment.app.DialogFragment;
 
 import dagger.hilt.android.AndroidEntryPoint;
 
+
 @AndroidEntryPoint
 
 public class BaseDialogFragment extends DialogFragment {

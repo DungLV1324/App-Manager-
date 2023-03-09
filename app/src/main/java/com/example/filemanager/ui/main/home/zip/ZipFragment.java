@@ -7,10 +7,10 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentZipBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 
-public class ZipFrag extends BaseBindingFragment<FragmentZipBinding,ZipVM> {
+public class ZipFragment extends BaseBindingFragment<FragmentZipBinding, ZipViewModel> {
     @Override
-    protected Class<ZipVM> getViewModel() {
-        return ZipVM.class;
+    protected Class<ZipViewModel> getViewModel() {
+        return ZipViewModel.class;
     }
 
     @Override

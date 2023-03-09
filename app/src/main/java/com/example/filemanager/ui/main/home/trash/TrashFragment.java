@@ -7,10 +7,10 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentTrashBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 
-public class TrashFrag extends BaseBindingFragment<FragmentTrashBinding,TrashVM> {
+public class TrashFragment extends BaseBindingFragment<FragmentTrashBinding, TrashViewModel> {
     @Override
-    protected Class<TrashVM> getViewModel() {
-        return TrashVM.class;
+    protected Class<TrashViewModel> getViewModel() {
+        return TrashViewModel.class;
     }
 
     @Override
