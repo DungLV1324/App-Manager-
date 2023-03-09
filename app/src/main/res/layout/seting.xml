@@ -11,36 +11,26 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        android:padding="20dp">
+        android:padding="10dp">
 
         />
 
-        <androidx.cardview.widget.CardView
-            android:id="@+id/card_view2"
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_marginTop="10dp"
-            app:cardCornerRadius="10dp"
-            app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent">
 
-            <androidx.constraintlayout.widget.ConstraintLayout
-                android:layout_width="match_parent"
-                android:layout_height="match_parent">
+
+
 
                 <ImageView
                     android:id="@+id/im_Back"
-                    android:layout_width="20dp"
-                    android:layout_height="20dp"
-                    android:layout_marginStart="10dp"
-                    android:layout_marginTop="15dp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="15dp"
                     android:src="@drawable/ic_back"
                     app:layout_constraintLeft_toLeftOf="parent"
-                    app:layout_constraintTop_toTopOf="parent" />
+                    app:layout_constraintTop_toTopOf="parent"
+                    />
 
                 <TextView
+                    android:layout_marginVertical="10dp"
                     android:id="@+id/tv_folder"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
@@ -67,27 +57,26 @@
                     android:id="@+id/im_Search"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginRight="15dp"
+                    android:layout_marginEnd="15dp"
                     android:src="@drawable/ic_search"
                     app:layout_constraintBottom_toBottomOf="@id/im_Menu"
                     app:layout_constraintRight_toLeftOf="@id/im_Menu"
                     app:layout_constraintTop_toTopOf="@id/im_Menu" />
 
 
-            </androidx.constraintlayout.widget.ConstraintLayout>
-        </androidx.cardview.widget.CardView>
-
 
         <androidx.cardview.widget.CardView
             android:id="@+id/card_view3"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_marginTop="10dp"
+            android:layout_marginHorizontal="10dp"
+            android:layout_marginTop="20dp"
             app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="@id/card_view2"
-            app:layout_constraintRight_toRightOf="@id/card_view2"
-            app:layout_constraintTop_toBottomOf="@id/card_view2">
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/im_Back">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -145,11 +134,13 @@
             android:id="@+id/card_view4"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="@id/card_view3"
-            app:layout_constraintRight_toRightOf="@id/card_view3"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_view3">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -160,7 +151,7 @@
                     android:id="@+id/feedback"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:layout_marginLeft="10dp"
+                    android:layout_marginStart="10dp"
                     android:fontFamily="@font/fontsfree"
                     android:text="Phản hồi"
                     android:textColor="#1B252D"
@@ -189,11 +180,13 @@
             android:id="@+id/card_view5"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="@id/card_view4"
-            app:layout_constraintRight_toRightOf="@id/card_view4"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_view4">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -232,11 +225,13 @@
             android:id="@+id/card_view6"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="@id/card_view5"
-            app:layout_constraintRight_toRightOf="@id/card_view5"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_view5">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -256,7 +251,6 @@
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintLeft_toLeftOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
-
 
 
                 <TextView
@@ -290,11 +284,13 @@
             android:id="@+id/card_view7"
             android:layout_width="match_parent"
             android:layout_height="0dp"
+            android:layout_marginHorizontal="10dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="10dp"
+            app:cardElevation="5dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="@id/card_view6"
-            app:layout_constraintRight_toRightOf="@id/card_view6"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_view6">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -330,14 +326,16 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="10dp"
+            app:cardElevation="5dp"
             android:id="@+id/card_view8"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="10dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="@id/card_view7"
-            app:layout_constraintRight_toRightOf="@id/card_view7"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_view7">
 
             <androidx.constraintlayout.widget.ConstraintLayout
@@ -375,14 +373,16 @@
         </androidx.cardview.widget.CardView>
 
         <androidx.cardview.widget.CardView
+            android:layout_marginHorizontal="10dp"
+            app:cardElevation="5dp"
             android:id="@+id/card_view9"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="10dp"
             app:cardCornerRadius="10dp"
             app:layout_constraintDimensionRatio="328:52"
-            app:layout_constraintLeft_toLeftOf="@id/card_view8"
-            app:layout_constraintRight_toRightOf="@id/card_view8"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/card_view8">
 
             <androidx.constraintlayout.widget.ConstraintLayout
