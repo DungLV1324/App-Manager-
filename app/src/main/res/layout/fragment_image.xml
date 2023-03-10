@@ -24,7 +24,7 @@
             android:focusable="true"
             android:fontFamily="@font/roboto_medium"
             android:layout_marginTop="20dp"
-            android:text="Image"
+            android:text="Ảnh"
             android:textColor="#1B252D"
             android:textSize="16sp"
             app:layout_constraintLeft_toRightOf="@id/im_back"

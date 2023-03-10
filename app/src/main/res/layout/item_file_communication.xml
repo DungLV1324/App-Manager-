@@ -25,7 +25,6 @@
             android:layout_height="50dp"
             android:background="@drawable/custom_bg_video_color_blue"
             app:layout_constraintBottom_toBottomOf="@id/view"
-
             app:layout_constraintLeft_toLeftOf="@+id/im_video_file"
             app:layout_constraintRight_toRightOf="@id/im_video_file"
             app:layout_constraintTop_toTopOf="@id/view" />
