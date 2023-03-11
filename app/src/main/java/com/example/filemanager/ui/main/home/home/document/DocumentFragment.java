@@ -7,11 +7,12 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentDocumentBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 
-public class DocumentFragment extends BaseBindingFragment<FragmentDocumentBinding,DocumentViewModel> {
+public class DocumentFragment extends BaseBindingFragment<FragmentDocumentBinding, DocumentViewModel> {
     @Override
     protected Class<DocumentViewModel> getViewModel() {
         return DocumentViewModel.class;
     }
+
 
     @Override
     protected int getLayoutId() {

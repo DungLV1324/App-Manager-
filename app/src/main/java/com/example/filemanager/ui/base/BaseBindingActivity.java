@@ -1,46 +1,38 @@
 package com.example.filemanager.ui.base;
 
-import android.content.Context;
 import android.os.Bundle;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.lifecycle.ViewModelProvider;
 
-import dagger.hilt.android.AndroidEntryPoint;
+public abstract class BaseBindingActivity<B extends ViewDataBinding, VM extends BaseViewModel> extends BaseActivity {
 
-public abstract class BaseBindingActivity<B extends ViewDataBinding, T extends BaseViewModel> extends BaseActivity {
     public B binding;
-    public T viewModel;
+    public VM viewModel;
 
-    public abstract int getLayoutId();
+    protected abstract int getLayoutId();
 
-    public abstract void setupView(Bundle savedInstanceState);
+    protected abstract Class<VM> getViewModel();
 
-    public abstract void setupData();
+    protected abstract void setupView(Bundle savedInstanceState);
 
-    protected abstract Class<T> getViewModel();
+    protected abstract void setupData();
 
     @Override
     protected void onCreate(@Nullable Bundle savedInstanceState) {
-//        LocaleUtils.applyLocale(this);
         super.onCreate(savedInstanceState);
         binding = DataBindingUtil.setContentView(this, getLayoutId());
         viewModel = new ViewModelProvider(this).get(getViewModel());
-        setupData();
         setupView(savedInstanceState);
+        setupData();
     }
 
     @Override
-    protected void attachBaseContext(Context newBase) {
-//        LocaleUtils.applyLocale(newBase);
-        super.attachBaseContext(newBase);
-
+    protected void onDestroy() {
+        super.onDestroy();
     }
 
 
-
 }
-

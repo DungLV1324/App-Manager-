@@ -7,7 +7,7 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentDownloadBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 
-public class DowloadFragment extends BaseBindingFragment<FragmentDownloadBinding,DowloadViewModel> {
+public class DowloadFragment extends BaseBindingFragment<FragmentDownloadBinding, DowloadViewModel> {
     @Override
     protected Class<DowloadViewModel> getViewModel() {
         return DowloadViewModel.class;

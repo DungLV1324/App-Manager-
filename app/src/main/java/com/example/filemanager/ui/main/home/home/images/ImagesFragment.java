@@ -7,7 +7,7 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentImageBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 
-public class ImagesFragment extends BaseBindingFragment<FragmentImageBinding,ImagesViewModel> {
+public class ImagesFragment extends BaseBindingFragment<FragmentImageBinding, ImagesViewModel> {
     @Override
     protected Class<ImagesViewModel> getViewModel() {
         return ImagesViewModel.class;

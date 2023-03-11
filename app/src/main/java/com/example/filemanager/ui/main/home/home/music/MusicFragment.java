@@ -7,7 +7,7 @@ import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentMusicBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 
-public class MusicFragment extends BaseBindingFragment<FragmentMusicBinding,MusicViewModel> {
+public class MusicFragment extends BaseBindingFragment<FragmentMusicBinding, MusicViewModel> {
     @Override
     protected Class<MusicViewModel> getViewModel() {
         return MusicViewModel.class;

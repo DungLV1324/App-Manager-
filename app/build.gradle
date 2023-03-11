@@ -1,20 +1,19 @@
 plugins {
     id 'com.android.application'
     id 'dagger.hilt.android.plugin'
-
+    id 'kotlin-android'
+    id 'kotlin-kapt'
 }
 
 android {
     namespace 'com.example.filemanager'
-    compileSdk 33
-
+    compileSdkVersion versions.compileSdkVersion
     defaultConfig {
         applicationId "com.example.filemanager"
-        minSdk 24
-        targetSdk 33
+        minSdkVersion versions.minSdkVersion
+        targetSdkVersion versions.targetSdkVersion
         versionCode 1
         versionName "1.0"
-
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
@@ -23,10 +22,12 @@ android {
             minifyEnabled false
             proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
         }
+        debug {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
     }
-    dataBinding(){
-        enabled=true
-    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
@@ -34,25 +35,52 @@ android {
     dataBinding {
         enabled = true
     }
+
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
 }
 
 dependencies {
 
-    implementation 'androidx.appcompat:appcompat:1.6.1'
-    implementation 'com.google.android.material:material:1.8.0'
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
-    testImplementation 'junit:junit:4.13.2'
-    androidTestImplementation 'androidx.test.ext:junit:1.1.5'
-    androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
-    //navigation
-    def nav_version = "2.1.0-alpha02"
-    implementation "androidx.navigation:navigation-fragment:$nav_version"
-    implementation "androidx.navigation:navigation-ui:$nav_version"
+    implementation fileTree(dir: "libs", include: ["*.jar"])
+    /*Core*/
+    implementation libraries.androidAppCopmpat
+    implementation libraries.multidex
+    implementation libraries.ktxCore
 
-    //hilt
+    /*UI*/
+    implementation libraries.androidxNavigation
+    implementation libraries.androidUICommon
+    implementation libraries.customFont
+    implementation libraries.materialDesign
     implementation libraries.hilt
+    kapt libraries.hiltKpt
     annotationProcessor libraries.hiltAP
-    //rxjava3
-    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
-    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+    implementation libraries.retrofitWithLogger
+
+    implementation libraries.glide
+    annotationProcessor libraries.glideAP
+
+    /*Database ( if use Room) */
+    implementation libraries.room
+    implementation libraries.roomRxjava
+    annotationProcessor libraries.roomKpt
+    kapt libraries.roomAP
+
+    implementation libraries.timberLog
+    implementation libraries.eventBus
+    implementation libraries.lottie
+    implementation libraries.lifeCycle
+//    implementation libraries.lifeCycleKtx
+
+
+    //library dimension
+    implementation 'com.intuit.sdp:sdp-android:1.0.6'
+
+    /*Test*/
+    testImplementation testLib
+    androidTestImplementation testLib
+
+    implementation libraries.gson
 }

@@ -13,7 +13,7 @@ import androidx.fragment.app.Fragment;
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentImageBinding;
 import com.example.filemanager.model.Image;
-import com.example.filemanager.ui.adapter.ImageAdapter;
+import com.example.filemanager.ui.adapter.recycler.ImageAdapter;
 import java.util.LinkedList;
 import java.util.List;
 

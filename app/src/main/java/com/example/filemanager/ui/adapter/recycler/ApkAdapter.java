@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.adapter;
+package com.example.filemanager.ui.adapter.recycler;
 
 import androidx.annotation.NonNull;
 

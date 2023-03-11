@@ -4,13 +4,53 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/navigation_fragment"
 
-    app:startDestination="@id/fragment_start">
+    app:startDestination="@id/fragment_main">
 
     <fragment
         android:id="@+id/fragment_start"
-        android:name="com.example.filemanager.ui.main.home.home.HomeFragment"
+        android:name="com.example.filemanager.ui.main.home.main.home.HomeFragment"
         android:label="FragmentHome"
-        tools:layout="@layout/fragment_start" />
+        tools:layout="@layout/fragment_home" />
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/fragment_apk"
+        android:name=""
+        android:label="FragmentAPK"
+        tools:layout="@layout/fragment_apk" />
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main" />
+    <fragment
+        android:id="@+id/fragment_main"
+        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
+        android:label="FragmentMain"
+        tools:layout="@layout/fragment_main" />
 
 
 </navigation>
