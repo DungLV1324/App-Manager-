@@ -1,0 +1,218 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:background="@drawable/custom_view"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/tv_favorites"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:layout_marginTop="10dp"
+        android:text="Favorites"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/star"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_favorites" />
+
+    <TextView
+        android:id="@+id/tv_rename"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Rename"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_edit"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_favorites" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_rename" />
+
+    <TextView
+        android:id="@+id/tv_share"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Share"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_alert_circle"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_rename" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_share" />
+
+    <TextView
+        android:id="@+id/tv_copy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+
+        android:text="Copy"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_copy"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_share" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_copy" />
+
+    <TextView
+        android:id="@+id/tv_cut"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Cut"
+        android:textColor="#000000"
+
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_cut"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_copy" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_cut" />
+
+    <TextView
+        android:id="@+id/tv_compress_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Compress file"
+
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_compress"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_cut" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_compress_file" />
+
+    <TextView
+        android:id="@+id/tv_extract_file"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Extract file"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_extract"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_compress_file" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_extract_file" />
+
+    <TextView
+        android:id="@+id/tv_open_with"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Open with"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_openfile"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_extract_file" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_with" />
+
+    <TextView
+        android:id="@+id/tv_information"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Information"
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_information"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_open_with" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_information" />
+
+    <TextView
+        android:id="@+id/tv_Delete"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawablePadding="20dp"
+        android:fontFamily="@font/rb_regular"
+        android:padding="20dp"
+        android:text="Delete"
+
+        android:textColor="#000000"
+        android:textSize="14sp"
+        app:drawableLeftCompat="@drawable/ic_delete"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_information" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="0.3dp"
+        android:background="#D7D7D7"
+        app:layout_constraintTop_toBottomOf="@id/tv_Delete" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
