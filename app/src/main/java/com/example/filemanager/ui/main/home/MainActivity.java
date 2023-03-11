@@ -28,9 +28,6 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding,MainVi
                 (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
         navController = navHostFragment.getNavController();
 
-
-
-
     }
 
     @Override
