@@ -22,7 +22,7 @@ public class VideoAdapter extends BaseBindingAdapter<ItemVideoBinding> {
 
     @Override
     public int layoutIdItem() {
-        return R.layout.item_image;
+        return R.layout.item_video;
     }
 
     @Override

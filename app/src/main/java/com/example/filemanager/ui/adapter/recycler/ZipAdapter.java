@@ -21,7 +21,7 @@ public class ZipAdapter extends BaseBindingAdapter<ItemZipBinding> {
 
     @Override
     public int layoutIdItem() {
-        return R.layout.item_image;
+        return R.layout.item_zip;
     }
 
     @Override

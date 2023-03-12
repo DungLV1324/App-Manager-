@@ -2,6 +2,8 @@ package com.example.filemanager.ui.main;
 
 import android.os.Bundle;
 
+import androidx.navigation.NavController;
+import androidx.navigation.fragment.NavHostFragment;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.ActivityMainBinding;
