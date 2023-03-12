@@ -12,7 +12,7 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="16dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="IMG_6418.JPG"
+        android:text="@string/img_6418_jpg"
         android:textColor="#FFFFFF"
         android:textSize="16sp"
         app:layout_constraintLeft_toRightOf="@id/im_back"

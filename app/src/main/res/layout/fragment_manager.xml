@@ -21,7 +21,8 @@
             android:clickable="true"
             android:src="@drawable/ic_back"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true" />
 
         <TextView
             android:id="@+id/tv_title_capaccity"
@@ -35,7 +36,8 @@
             android:textColor="#1B252D"
             android:textSize="16sp"
             app:layout_constraintLeft_toRightOf="@+id/im_back"
-            app:layout_constraintTop_toTopOf="@+id/im_back" />
+            app:layout_constraintTop_toTopOf="@+id/im_back"
+            android:focusable="true" />
 
         <ImageView
             android:id="@+id/im_search"
@@ -46,7 +48,8 @@
             android:clickable="true"
             android:src="@drawable/ic_search"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            android:focusable="true" />
         <androidx.core.widget.NestedScrollView
             android:layout_width="match_parent"
             android:layout_height="0dp"

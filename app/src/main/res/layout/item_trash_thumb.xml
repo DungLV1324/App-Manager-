@@ -87,7 +87,7 @@
             android:clickable="true"
             android:focusable="true"
             android:fontFamily="@font/roboto_regular"
-            android:text="Items are deleted forever after 30 days"
+            android:text="@string/items_are_deleted_forever_after_30_days"
             android:textColor="#666666"
             android:textSize="12sp"
             app:layout_constraintLeft_toRightOf="@id/im_trash"

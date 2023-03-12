@@ -11,7 +11,6 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/custom_ripple"
-
         android:padding="15dp">
 
         <ImageView
@@ -31,7 +30,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:fontFamily="@font/rb_regular"
-            android:text="2022-05-20_17.png"
+            android:text="@string/_2022_05_20_17_png"
             android:textColor="#000000"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@id/tv_date"
@@ -44,7 +43,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="19/09/2022 1:11CH 665kb"
+            android:text="@string/_19_09_2022_1_11ch_665kb"
             android:textColor="#B4B4B4"
             android:textSize="10sp"
             app:layout_constraintLeft_toLeftOf="@id/tv_name"
