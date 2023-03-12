@@ -10,16 +10,13 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:padding="15dp"
-        >
+        android:paddingVertical="15dp">
+
         <ImageView
             android:id="@+id/im_preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="10dp"
-            android:src="@drawable/ic_music"
+            android:src="@drawable/ic_video"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_name"
@@ -29,6 +26,7 @@
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="12dp"
             android:fontFamily="@font/rb_regular"
             android:text="2022-05-20_17.png"
             android:textColor="#000000"
@@ -46,16 +44,15 @@
             android:text="19/09/2022 1:11CH 665kb"
             android:textColor="#B4B4B4"
             android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/im_preview"
             app:layout_constraintLeft_toLeftOf="@id/tv_name"
             app:layout_constraintTop_toBottomOf="@+id/tv_name"
-            app:layout_constraintBottom_toBottomOf="@id/im_preview"
             tools:ignore="SmallSp" />
 
         <ImageView
             android:id="@+id/im_three_dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginEnd="24dp"
             android:src="@drawable/ic_dot3"
             app:layout_constraintBottom_toBottomOf="@id/im_preview"
             app:layout_constraintRight_toRightOf="parent"

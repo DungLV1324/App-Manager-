@@ -6,11 +6,19 @@ import android.view.View;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentHomeBinding;
+import com.example.filemanager.model.Recent;
+
 import com.example.filemanager.ui.base.BaseBindingFragment;
 import com.example.filemanager.ui.main.MainActivity;
+import com.example.filemanager.ui.adapter.recycler.RecentAdapter;
 import com.example.filemanager.util.ViewUtil;
 
+import java.util.LinkedList;
+import java.util.List;
+
 public class HomeFragment extends BaseBindingFragment<FragmentHomeBinding, HomeViewModel> {
+    private final List<Recent> listItemRecent = new LinkedList<>();
+    private RecentAdapter recentAdapter;
     @Override
     protected Class<HomeViewModel> getViewModel() {
         return HomeViewModel.class;
@@ -25,6 +33,8 @@ public class HomeFragment extends BaseBindingFragment<FragmentHomeBinding, HomeV
     protected void onCreatedView(View view, Bundle savedInstanceState) {
         initView();
         initListener();
+        initAdapter();
+        initData();
     }
 
     private void initView() {
@@ -67,5 +77,23 @@ public class HomeFragment extends BaseBindingFragment<FragmentHomeBinding, HomeV
         });
     }
 
+    public void initAdapter() {
+        recentAdapter = new RecentAdapter();
+        binding.rcRecent.setAdapter(recentAdapter);
+    }
+    public void initData() {
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        recentAdapter.setListItemRecent(listItemRecent);
 
+    }
 }
