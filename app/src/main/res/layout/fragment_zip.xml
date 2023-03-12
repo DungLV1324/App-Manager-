@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".ui.main.MainActivity">
+        tools:context=".ui.main.home.MainActivity">
 
 
 
@@ -21,7 +21,7 @@
             android:layout_marginStart="8dp"
             android:fontFamily="@font/roboto_medium"
             android:layout_marginTop="20dp"
-            android:text="File Zip"
+            android:text="@string/file_zip"
             android:textColor="#1B252D"
             android:textSize="16sp"
             app:layout_constraintLeft_toRightOf="@id/im_back"
@@ -34,7 +34,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Tên"
+            android:text="@string/last_edited_by_me"
             android:drawablePadding="6dp"
             android:textColor="#1B252D"
             android:textSize="12sp"
@@ -49,6 +49,7 @@
             android:layout_marginTop="20dp"
             android:src="@drawable/ic_menu"
             android:layout_marginEnd="16dp"
+            android:background="@drawable/custom_ripple"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
@@ -61,6 +62,8 @@
             android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
             android:src="@drawable/ic_search"
+            android:background="@drawable/custom_ripple"
+
             app:layout_constraintLeft_toRightOf="@id/tv_title"
             app:layout_constraintRight_toLeftOf="@id/im_menu"
             app:layout_constraintTop_toTopOf="parent" />
@@ -71,6 +74,8 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:layout_marginStart="16dp"
+            android:background="@drawable/custom_ripple"
+
             android:layout_marginEnd="5dp"
             android:src="@drawable/ic_back"
             app:layout_constraintLeft_toLeftOf="parent"
@@ -82,7 +87,9 @@
             android:id="@+id/list_zip"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="16dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_ripple"
+
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintLeft_toLeftOf="@id/im_back"

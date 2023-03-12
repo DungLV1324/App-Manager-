@@ -9,12 +9,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/custom_ripple"
         android:padding="10dp">
 
         <ImageView
             android:id="@+id/im_Back"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:background="@drawable/custom_ripple"
             android:src="@drawable/ic_back"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +28,7 @@
             android:id="@+id/tv_feedback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phản hồi"
+            android:text="@string/ph_n_h_i"
             android:textSize="16sp"
             android:textColor="#1B252D"
             android:fontFamily="@font/roboto_medium"
@@ -58,7 +60,7 @@
                     android:layout_height="match_parent"
                     android:gravity="top"
                     android:background="@null"
-                    android:hint="Describe the issue you've encountered"
+                    android:hint="@string/describe_the_issue_you_ve_encountered"
                     android:fontFamily="@font/roboto_regular"
                     android:textSize="14sp"
                     android:textColorHint="#A5A6AE"/>
@@ -66,117 +68,19 @@
         </androidx.cardview.widget.CardView>
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/card_view1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="Send"
+            android:text="@string/send"
             android:textAllCaps="false"
             android:textSize="15sp"
             android:background="@drawable/custom_button"
             android:layout_marginTop="20dp"/>
 
-        <TextView
-            android:id="@+id/tv_Home"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Home"
-            android:textColor="#6552FE"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/tv_Folder"
-            />
 
-        <TextView
-            android:id="@+id/tv_Folder"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Folder"
-            android:textColor="#1B252D"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toRightOf="@+id/tv_Home"
-            app:layout_constraintTop_toTopOf="@+id/tv_Home"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/tv_History"
-            />
-
-        <TextView
-            android:id="@+id/tv_History"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="History"
-            android:textColor="#1B252D"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toRightOf="@+id/tv_Folder"
-            app:layout_constraintTop_toTopOf="@+id/tv_Folder"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/tv_Setting"
-
-            />
-
-        <TextView
-            android:id="@+id/tv_Setting"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="Setting"
-            android:textColor="#1B252D"
-            android:fontFamily="@font/roboto_medium"
-            android:textSize="11sp"
-            app:layout_constraintLeft_toRightOf="@+id/tv_History"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/tv_History"
-            app:layout_constraintBottom_toBottomOf="parent"
-            />
-
-        <ImageView
-            android:id="@+id/im_Home"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/home"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_Home"
-            app:layout_constraintRight_toRightOf="@+id/tv_Home"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Home"
-            />
-
-        <ImageView
-            android:id="@+id/im_Folder"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_folder"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_Folder"
-            app:layout_constraintRight_toRightOf="@+id/tv_Folder"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Folder"
-            />
-
-        <ImageView
-            android:id="@+id/im_History"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_history"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_History"
-            app:layout_constraintRight_toRightOf="@+id/tv_History"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_History"
-            />
-
-        <ImageView
-            android:id="@+id/im_Setting"
-            android:layout_width="20dp"
-            android:layout_height="20dp"
-            android:src="@drawable/ic_setting"
-            app:layout_constraintLeft_toLeftOf="@+id/tv_Setting"
-            app:layout_constraintRight_toRightOf="@+id/tv_Setting"
-            android:layout_marginBottom="5dp"
-            app:layout_constraintBottom_toTopOf="@+id/tv_Setting"
-            />
 
 
 

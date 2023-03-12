@@ -11,7 +11,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/white"
-        tools:context=".ui.main.MainActivity">
+        tools:context=".ui.main.home.MainActivity">
 
 
 
@@ -24,7 +24,7 @@
             android:focusable="true"
             android:fontFamily="@font/roboto_medium"
             android:layout_marginTop="20dp"
-            android:text="Ảnh"
+            android:text="@string/image"
             android:textColor="#1B252D"
             android:textSize="16sp"
             app:layout_constraintLeft_toRightOf="@id/im_back"
@@ -37,26 +37,27 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Tên"
+            android:text="@string/last_edited_by_me"
             android:drawablePadding="6dp"
             android:textColor="#1B252D"
             android:textSize="12sp"
             app:drawableRightCompat="@drawable/ic_solid"
             app:layout_constraintLeft_toLeftOf="@id/im_back"
-            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+            android:background="@drawable/custom_ripple"
+
+            />
 
         <ImageView
             android:id="@+id/im_menu"
             android:layout_width="wrap_content"
-
+            android:background="@drawable/custom_ripple"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:src="@drawable/ic_menu"
             android:layout_marginEnd="16dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
 
         <ImageView
             android:id="@+id/im_search"
@@ -66,6 +67,7 @@
             android:layout_marginEnd="20dp"
             android:clickable="true"
             android:focusable="true"
+
             android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/ic_search"
             app:layout_constraintLeft_toRightOf="@id/tv_title"
@@ -80,6 +82,8 @@
             android:layout_marginStart="16dp"
             android:layout_marginEnd="5dp"
             android:src="@drawable/ic_back"
+            android:background="@drawable/custom_ripple"
+
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_title"
             app:layout_constraintTop_toTopOf="parent" />
@@ -91,6 +95,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:orientation="vertical"
+            android:background="@drawable/custom_ripple"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintLeft_toLeftOf="@id/im_back"
             app:layout_constraintRight_toRightOf="@id/im_menu"

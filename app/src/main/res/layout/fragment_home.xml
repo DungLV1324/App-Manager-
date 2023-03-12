@@ -16,6 +16,8 @@
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="24dp"
             android:layout_marginTop="16dp"
+            android:background="@drawable/custom_ripple"
+
             android:elevation="6dp"
             android:padding="10dp"
             app:cornerRadius="20dp"
@@ -35,6 +37,7 @@
                 app:cardBackgroundColor="#ffffffff"
                 app:cardCornerRadius="20dp"
                 app:cardElevation="0dp"
+
                 app:layout_gravity="center">
 
                 <androidx.constraintlayout.widget.ConstraintLayout
@@ -46,6 +49,7 @@
                         android:id="@+id/im_search"
                         android:layout_width="20dp"
                         android:layout_height="20dp"
+                        android:background="@drawable/custom_ripple"
                         android:src="@drawable/ic_search"
                         app:layout_constraintBottom_toBottomOf="parent"
                         app:layout_constraintLeft_toLeftOf="parent"
@@ -96,6 +100,7 @@
                     android:drawableTop="@drawable/picture"
                     android:drawablePadding="12dp"
                     android:focusable="true"
+
                     android:fontFamily="@font/roboto_regular"
                     android:gravity="center"
                     android:paddingHorizontal="6dp"

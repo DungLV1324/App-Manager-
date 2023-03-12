@@ -10,7 +10,9 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+
+        android:layout_height="match_parent"
+        android:background="@drawable/custom_ripple">
 
 
         <ImageView
@@ -21,14 +23,15 @@
             android:layout_margin="15dp"
             android:src="@drawable/star"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_name_funtion"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+
+            android:background="@drawable/custom_ripple"
             android:fontFamily="@font/roboto_regular"
             android:text="@string/starred"
             android:textColor="#1B252D"
@@ -39,12 +42,10 @@
 
         <TextView
             android:id="@+id/line_star"
-
             android:layout_width="match_parent"
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
             android:background="#D7D7D7"
-
             app:layout_constraintTop_toBottomOf="@+id/im_star"
 
             />
@@ -65,8 +66,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:background="@drawable/custom_ripple"
             android:fontFamily="@font/roboto_regular"
-
             android:text="@string/share"
             android:textColor="#1B252D"
             android:textSize="14sp"
@@ -80,7 +81,6 @@
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
             android:background="#D7D7D7"
-
             app:layout_constraintTop_toBottomOf="@+id/im_ic_share"
 
             />
@@ -91,6 +91,7 @@
             android:layout_height="wrap_content"
             android:layout_margin="15dp"
             android:src="@drawable/ic_copy"
+
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/line_share"
 
@@ -101,8 +102,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:background="@drawable/custom_ripple"
             android:fontFamily="@font/roboto_regular"
-
             android:text="@string/copy"
             android:textColor="#1B252D"
             android:textSize="14sp"
@@ -137,6 +138,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:background="@drawable/custom_ripple"
             android:fontFamily="@font/roboto_regular"
 
             android:text="@string/detail"
@@ -173,8 +175,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="15dp"
+            android:background="@drawable/custom_ripple"
             android:fontFamily="@font/roboto_regular"
-
             android:text="@string/delete"
             android:textColor="#1B252D"
             android:textSize="14sp"
@@ -188,9 +190,6 @@
             android:layout_height="0.5dp"
             android:layout_marginTop="15dp"
             android:background="#D7D7D7"
-            app:layout_constraintTop_toBottomOf="@+id/im_ic_delete"
-            />
-
-
+            app:layout_constraintTop_toBottomOf="@+id/im_ic_delete" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

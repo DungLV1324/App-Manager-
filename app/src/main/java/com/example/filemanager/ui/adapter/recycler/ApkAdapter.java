@@ -12,9 +12,15 @@ import java.util.List;
 
 public class ApkAdapter extends BaseBindingAdapter<ItemApkBinding> {
   List<Apk> listApk=new LinkedList<>();
+
+    public void setListApk(List<Apk> listApk) {
+        this.listApk.clear();
+        this.listApk.addAll(listApk);
+        notifyDataSetChanged();    }
+
     @Override
     public int layoutIdItem() {
-        return R.layout.item_image;
+        return R.layout.item_apk;
     }
 
     @Override
