@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.images;
+package com.example.filemanager.ui.main.category.images;
 
 import android.os.Bundle;
 import android.view.View;

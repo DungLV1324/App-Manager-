@@ -1,11 +1,10 @@
-package com.example.filemanager.ui.main.zip;
+package com.example.filemanager.ui.main.category.zip;
 
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentZipBinding;
-import com.example.filemanager.model.Zip;
 import com.example.filemanager.model.Zip;
 
 import com.example.filemanager.ui.adapter.recycler.ZipAdapter;

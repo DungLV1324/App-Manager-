@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.trash;
+package com.example.filemanager.ui.main.category.trash;
 
 import com.example.filemanager.ui.base.BaseViewModel;
 

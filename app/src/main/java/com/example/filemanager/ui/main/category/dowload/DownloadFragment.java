@@ -1,14 +1,11 @@
-package com.example.filemanager.ui.main.dowload;
+package com.example.filemanager.ui.main.category.dowload;
 
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentDownloadBinding;
-import com.example.filemanager.model.Apk;
 import com.example.filemanager.model.Download;
-import com.example.filemanager.ui.adapter.recycler.ApkAdapter;
-import com.example.filemanager.ui.adapter.recycler.DocumentAdapter;
 import com.example.filemanager.ui.adapter.recycler.DownloadAdapter;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 

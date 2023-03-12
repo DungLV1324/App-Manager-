@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.apk;
+package com.example.filemanager.ui.main.category.apk;
 
 import com.example.filemanager.ui.base.BaseViewModel;
 

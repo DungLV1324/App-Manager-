@@ -1,13 +1,11 @@
-package com.example.filemanager.ui.main.music;
+package com.example.filemanager.ui.main.category.music;
 
 import android.os.Bundle;
 import android.view.View;
 
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentMusicBinding;
-import com.example.filemanager.model.Document;
 import com.example.filemanager.model.Music;
-import com.example.filemanager.ui.adapter.recycler.DocumentAdapter;
 import com.example.filemanager.ui.adapter.recycler.MusicAdapter;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 

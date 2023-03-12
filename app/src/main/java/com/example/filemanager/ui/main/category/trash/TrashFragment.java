@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.trash;
+package com.example.filemanager.ui.main.category.trash;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,8 +6,6 @@ import android.view.View;
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentTrashBinding;
 import com.example.filemanager.ui.base.BaseBindingFragment;
-
-import java.util.List;
 
 public class TrashFragment extends BaseBindingFragment<FragmentTrashBinding, TrashViewModel> {
 

@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.videos;
+package com.example.filemanager.ui.main.category.videos;
 
 import com.example.filemanager.ui.base.BaseViewModel;
 
