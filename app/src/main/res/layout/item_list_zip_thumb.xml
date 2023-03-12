@@ -10,6 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_ripple"
         android:padding="10dp">
 
         <com.google.android.material.card.MaterialCardView
@@ -51,7 +52,7 @@
             android:layout_marginEnd="23dp"
             android:layout_marginBottom="6dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="backgroundcolorfuldobeautiful_png"
+            android:text="@string/backgroundcolorfuldobeautiful_png"
             android:textColor="#1B252D"
             android:textSize="12sp"
             app:layout_constraintBottom_toBottomOf="parent"

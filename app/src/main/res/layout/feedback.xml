@@ -9,12 +9,14 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@drawable/custom_ripple"
         android:padding="10dp">
 
         <ImageView
             android:id="@+id/im_Back"
             android:layout_width="20dp"
             android:layout_height="20dp"
+            android:background="@drawable/custom_ripple"
             android:src="@drawable/ic_back"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -26,7 +28,7 @@
             android:id="@+id/tv_feedback"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Phản hồi"
+            android:text="@string/ph_n_h_i"
             android:textSize="16sp"
             android:textColor="#1B252D"
             android:fontFamily="@font/roboto_medium"
@@ -58,7 +60,7 @@
                     android:layout_height="match_parent"
                     android:gravity="top"
                     android:background="@null"
-                    android:hint="Describe the issue you've encountered"
+                    android:hint="@string/describe_the_issue_you_ve_encountered"
                     android:fontFamily="@font/roboto_regular"
                     android:textSize="14sp"
                     android:textColorHint="#A5A6AE"/>
@@ -66,13 +68,13 @@
         </androidx.cardview.widget.CardView>
 
 
-        <androidx.appcompat.widget.AppCompatButton
+        <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@+id/card_view1"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="Send"
+            android:text="@string/send"
             android:textAllCaps="false"
             android:textSize="15sp"
             android:background="@drawable/custom_button"
