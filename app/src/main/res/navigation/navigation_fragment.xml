@@ -61,6 +61,11 @@
         android:name="com.example.filemanager.ui.main.main.setting.language.LanguageFragment"
         android:label="FragmentLanguage"
         tools:layout="@layout/fragment_language" />
+    <fragment
+        android:id="@+id/fragment_policy"
+        android:name="com.example.filemanager.ui.main.policy.PolicyFragment"
+        android:label="FragmentPolicy"
+        tools:layout="@layout/fragment_policy" />
 
 
 </navigation>

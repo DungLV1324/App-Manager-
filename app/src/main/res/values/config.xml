@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="link_policy" translatable="false">https://www.google.com/</string>
+    <string name="support_mail" translatable="false">tapbi123@tapbi.com</string>
+    <string name="package_feed_back" translatable="false">com.google.android.gm</string>
+    <string name="link_google_store" translatable="false">https://play.google.com/store/apps/details?id=</string>
+
+</resources>

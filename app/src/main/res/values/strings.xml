@@ -44,4 +44,12 @@
     <string name="since_android_11_google_requests_file_managers_to_request_user_permission_for_managing_all_files_on_the_device_details_here">Since Android 11, Google requests File Managers to request user permission for managing all files on the device. Details here.</string>
     <string name="amaze_file_manager_needs_this_permission_too_after_pressing_granthere_please_select_allow_access_to_manage_all_files_option_on_the_next_screen">Amaze File Manager needs this permission too. After pressing Granthere, please select Allow access to manage all files option on the next screen.</string>
     <string name="language">Language</string>
+    <string name="policy">Policy</string>
+    <string name="share_file_manager">Share File Manager</string>
+    <string name="vietnamese">Vietnamese</string>
+    <string name="let_me_recoomend_this_application">Let me recommend you this application</string>
+    <string name="chosse_one">choose one</string>
+    <string name="privacy_policy">Privacy Policy</string>
+    <string name="open_browser">Open in Browser</string>
+    <string name="device_not_brower">Device not browser</string>
 </resources>
