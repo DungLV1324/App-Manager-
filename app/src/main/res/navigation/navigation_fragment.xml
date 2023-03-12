@@ -38,7 +38,7 @@
         tools:layout="@layout/fragment_apk" />
     <fragment
         android:id="@+id/fragment_download"
-        android:name="com.example.filemanager.ui.main.dowload.DowloadFragment"
+        android:name="com.example.filemanager.ui.main.dowload.DownloadFragment"
         android:label="FragmentDownload"
         tools:layout="@layout/fragment_download" />
     <fragment
