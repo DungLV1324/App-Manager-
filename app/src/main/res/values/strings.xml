@@ -44,4 +44,9 @@
     <string name="since_android_11_google_requests_file_managers_to_request_user_permission_for_managing_all_files_on_the_device_details_here">Since Android 11, Google requests File Managers to request user permission for managing all files on the device. Details here.</string>
     <string name="amaze_file_manager_needs_this_permission_too_after_pressing_granthere_please_select_allow_access_to_manage_all_files_option_on_the_next_screen">Amaze File Manager needs this permission too. After pressing Granthere, please select Allow access to manage all files option on the next screen.</string>
     <string name="language">Language</string>
+    <string name="_19_09_2022_1_11ch_665kb">19_09_2022_1_11ch_665kb</string>
+    <string name="last_edited_by_me">Last edited by me</string>
+    <string name="file_zip">File Zip</string>
+    <string name="chat">Chat</string>
+    <string name="image">Image</string>
 </resources>

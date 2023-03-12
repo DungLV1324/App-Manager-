@@ -13,7 +13,7 @@
         android:layout_width="match_parent"
         android:background="@color/white"
         android:layout_height="match_parent"
-        tools:context=".ui.main.MainActivity">
+        tools:context=".ui.main.home.MainActivity">
 
 
 
@@ -37,7 +37,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:fontFamily="@font/roboto_medium"
-            android:text="Tên"
+            android:text="@string/last_edited_by_me"
             android:drawablePadding="6dp"
             android:textColor="#1B252D"
             android:textSize="12sp"
