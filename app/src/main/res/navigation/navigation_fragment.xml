@@ -56,6 +56,11 @@
         android:name="com.example.filemanager.ui.main.images.ImagesFragment"
         android:label="FragmentImage"
         tools:layout="@layout/fragment_image" />
+    <fragment
+        android:id="@+id/fragment_language"
+        android:name="com.example.filemanager.ui.main.main.setting.language.LanguageFragment"
+        android:label="FragmentLanguage"
+        tools:layout="@layout/fragment_language" />
 
 
 </navigation>
