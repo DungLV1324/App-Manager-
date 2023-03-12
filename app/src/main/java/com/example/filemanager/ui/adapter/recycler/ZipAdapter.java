@@ -12,6 +12,13 @@ import java.util.List;
 
 public class ZipAdapter extends BaseBindingAdapter<ItemZipBinding> {
   List<Zip> listZip=new LinkedList<>();
+
+    public void setListZip(List<Zip> listZip) {
+        this.listZip.clear();
+        this.listZip.addAll(listZip);
+        notifyDataSetChanged();
+    }
+
     @Override
     public int layoutIdItem() {
         return R.layout.item_image;
