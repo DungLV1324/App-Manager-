@@ -16,16 +16,16 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding, MainV
 
     @Override
     public int getLayoutId() {
-        return R.layout.activity_main;
+        return R.layout.fragment_edit;
     }
 
     @Override
     public void setupView(Bundle savedInstanceState) {
-        navHostFragment =
-                (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
-        if (navHostFragment != null) {
-            navController = navHostFragment.getNavController();
-        }
+//        navHostFragment =
+//                (NavHostFragment) getSupportFragmentManager().findFragmentById(R.id.nav_host_fragment);
+//        if (navHostFragment != null) {
+//            navController = navHostFragment.getNavController();
+//        }
 
     }
 

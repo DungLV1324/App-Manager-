@@ -25,7 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
-        android:src="@drawable/ic_x"
+        android:src="@drawable/ic_x_black"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/tv_name"
         app:layout_constraintTop_toTopOf="@id/tv_name" />
@@ -34,12 +34,12 @@
         android:id="@+id/tv_type"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="36dp"
         android:layout_marginStart="14sp"
+        android:layout_marginTop="36dp"
         android:fontFamily="@font/roboto_regular"
         android:text="Type"
         android:textColor="#6C757D"
-        android:textSize="14sp"
+        android:textSize="11sp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_name"
 
@@ -63,11 +63,11 @@
         android:id="@+id/tv_location"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Picture"
-        android:textColor="@color/black"
-        android:textSize="16sp"
+        android:layout_marginTop="40dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Location"
+        android:textColor="#6C757D"
+        android:textSize="11sp"
         app:layout_constraintLeft_toLeftOf="@id/tv_type"
 
         app:layout_constraintTop_toBottomOf="@id/tv_picture"
@@ -76,91 +76,111 @@
 
     <TextView
         android:id="@+id/tv_android"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Android"
+        android:layout_marginTop="12dp"
         android:drawablePadding="8dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Android"
         android:textColor="@color/black"
         android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="@id/im_back"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_location"
-        app:drawableStartCompat="@drawable/ic_forder_minus" />
+        app:drawableStartCompat="@drawable/ic_forder_minus"
+        app:layout_constraintLeft_toLeftOf="@id/tv_type"
+        app:layout_constraintTop_toBottomOf="@id/tv_location" />
 
     <TextView
         android:id="@+id/tv_link"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_medium"
-        android:text="Picture"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="@id/im_back"
-        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="12dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="link"
+        android:textColor="#2196F3"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_type"
         app:layout_constraintTop_toBottomOf="@id/tv_android"
 
         />
 
     <TextView
         android:id="@+id/tv_size"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_medium"
+        android:layout_marginTop="37dp"
+        android:fontFamily="@font/roboto_regular"
         android:text="Size"
-        android:textColor="@color/black"
-        android:textSize="16sp"
+        android:textColor="#6C757D"
+        android:textSize="11sp"
         app:layout_constraintLeft_toLeftOf="@id/im_back"
-        app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintTop_toBottomOf="@id/tv_link"
 
         />
 
     <TextView
         android:id="@+id/tv_size_number"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
-        android:fontFamily="@font/roboto_medium"
+        android:fontFamily="@font/roboto_regular"
         android:text="879KB"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="@id/im_back"
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_size"
+        app:layout_constraintTop_toBottomOf="@id/tv_size"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_dimensions"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/roboto_regular"
+        android:text="Dimensions"
+        android:textColor="#6C757D"
+        android:layout_marginEnd="28dp"
+        android:textSize="11sp"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="@id/tv_size"
+
+        />
+
+    <TextView
+        android:id="@+id/tv_dimensions_nb"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:fontFamily="@font/roboto_regular"
+        android:text="879 x 747"
+        android:textColor="@color/black"
+        android:textSize="14sp"
+        app:layout_constraintRight_toRightOf="@id/tv_dimensions"
         app:layout_constraintTop_toBottomOf="@id/tv_size"
 
         />
 
     <TextView
         android:id="@+id/tv_date_created"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="40dp"
         android:fontFamily="@font/roboto_medium"
         android:text="Date Created"
-        android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="@id/im_back"
-        app:layout_constraintRight_toRightOf="parent"
+        android:textColor="#6C757D"
+        android:textSize="11sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_size"
         app:layout_constraintTop_toBottomOf="@id/tv_size_number"
 
         />
 
     <TextView
         android:id="@+id/tv_date"
-        android:layout_width="0dp"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="12dp"
         android:fontFamily="@font/roboto_medium"
-        android:text="Picture"
+        android:text="Tues,4 October ,2022-10:21 AM"
         android:textColor="@color/black"
-        android:textSize="16sp"
-        app:layout_constraintLeft_toLeftOf="@id/im_back"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/tv_date_created"
-
-        />
+        android:textSize="14sp"
+        app:layout_constraintLeft_toLeftOf="@id/tv_size"
+        app:layout_constraintTop_toBottomOf="@id/tv_date_created" />
 </androidx.constraintlayout.widget.ConstraintLayout>
