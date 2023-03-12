@@ -34,9 +34,10 @@
     <string name="music">Music</string>
     <string name="trash">Trash</string>
     <string name="zip">Zip</string>
-    <string name="dowload">Dowload</string>
+    <string name="download">Download</string>
     <string name="tv_apk">Apk</string>
     <string name="home">Home</string>
     <string name="favorite">Favorite</string>
     <string name="setting">Setting</string>
+    <string name="recent">Recent</string>
 </resources>

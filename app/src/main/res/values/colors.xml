@@ -7,4 +7,12 @@
     <color name="teal_700">#FF018786</color>
     <color name="black">#FF000000</color>
     <color name="white">#FFFFFFFF</color>
+
+
+    //custom shadow
+    <color name="shadow_view_foreground_color_light">#D6C210</color>
+    <color name="shadow_view_default_shadow_color">#151516</color>
+    <color name="shadow_view_foreground_color_dark">#1FC60F0F</color>
+    //horizontal bar
+    <color name="default_bar_color">#F5F5F5</color>
 </resources>

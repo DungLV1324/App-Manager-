@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_background_view_file_manager"
+        android:paddingHorizontal="8dp"
+        android:paddingVertical="22dp">
+
+        <ImageView
+            android:id="@+id/im_file_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/icon_file_manager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/tv_file_manager"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:fontFamily="@font/roboto_bold"
+            android:text="File Manager"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toBottomOf="@id/im_file_manager"
+            app:layout_constraintLeft_toRightOf="@id/im_file_manager"
+            app:layout_constraintTop_toTopOf="@id/im_file_manager" />
+
+        <TextView
+            android:id="@+id/tv_sum_file"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Tổng tệp tin 3,891"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toTopOf="@id/tv_sum_storage"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/im_file_manager"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/tv_sum_storage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="72,11 GB"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/im_file_manager"
+            app:layout_constraintLeft_toLeftOf="@id/tv_sum_file"
+            app:layout_constraintTop_toBottomOf="@id/tv_sum_file"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/tv_text_free_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/im_circle_free_space"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Còn trống"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/im_file_manager"
+            app:layout_constraintTop_toBottomOf="@id/im_file_manager"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_number_free_space"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="9.31 GB"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_text_free_space"
+            app:layout_constraintTop_toBottomOf="@id/tv_text_free_space"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/tv_text_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/im_circle_system"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Hệ thống"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toRightOf="@id/tv_text_free_space"
+            app:layout_constraintRight_toLeftOf="@id/tv_text_application"
+            app:layout_constraintTop_toBottomOf="@id/im_file_manager"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_number_system"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="4.11 GB"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_text_system"
+            app:layout_constraintTop_toBottomOf="@id/tv_text_system"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/tv_text_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/im_circle_application"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Ứng dụng"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toRightOf="@id/tv_text_system"
+            app:layout_constraintRight_toLeftOf="@id/tv_text_video"
+            app:layout_constraintTop_toBottomOf="@id/im_file_manager"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_number_application"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="6.7 GB"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_text_application"
+            app:layout_constraintTop_toBottomOf="@id/tv_text_application"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/tv_text_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/im_circle_video"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Hệ thống"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/im_file_manager"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_number_video"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="2.1 GB"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_text_video"
+            app:layout_constraintTop_toBottomOf="@id/tv_text_video"
+            tools:ignore="SmallSp" />
+
+
+        <TextView
+            android:id="@+id/tv_text_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:drawableLeft="@drawable/im_circle_document"
+            android:drawablePadding="5dp"
+            android:fontFamily="@font/roboto_regular"
+            android:text="Tài liệu"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/im_file_manager"
+            app:layout_constraintTop_toBottomOf="@id/tv_number_free_space"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tv_number_document"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="2dp"
+            android:fontFamily="@font/nunito_bold"
+            android:text="24.11 GB"
+            android:textColor="@color/white"
+            android:textSize="10sp"
+            app:layout_constraintLeft_toLeftOf="@id/tv_text_document"
+            app:layout_constraintTop_toBottomOf="@id/tv_text_document"
+            tools:ignore="SmallSp" />
+
+        <com.example.filemanager.ui.custom.HorizontalBarChartView
+            android:id="@+id/progress_bar"
+            android:layout_width="match_parent"
+            android:layout_height="26dp"
+            android:background="#00ffffff"
+            android:layout_marginTop="16dp"
+            android:rotation="180"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_number_document" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

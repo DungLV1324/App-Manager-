@@ -22,10 +22,10 @@
         android:label="FragmentAPK"
         tools:layout="@layout/fragment_apk" />
     <fragment
-        android:id="@+id/fragment_main"
-        android:name="com.example.filemanager.ui.main.home.main.MainFragment"
-        android:label="FragmentMain"
-        tools:layout="@layout/fragment_main" />
+        android:id="@+id/fragment_image"
+        android:name="com.example.filemanager.ui.main.home.home.images.ImagesFragment"
+        android:label="FragmentImage"
+        tools:layout="@layout/fragment_image" />
     <fragment
         android:id="@+id/fragment_main"
         android:name="com.example.filemanager.ui.main.home.main.MainFragment"
