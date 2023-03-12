@@ -11,7 +11,7 @@ import androidx.databinding.DataBindingUtil;
 import androidx.databinding.ViewDataBinding;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.filemanager.ui.main.home.MainViewModel;
+import com.example.filemanager.ui.main.MainViewModel;
 
 
 public abstract class BaseBindingDialogFragment<B extends ViewDataBinding> extends BaseDialogFragment {

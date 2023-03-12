@@ -6,10 +6,10 @@ import androidx.fragment.app.FragmentManager;
 import androidx.lifecycle.Lifecycle;
 import androidx.viewpager2.adapter.FragmentStateAdapter;
 
-import com.example.filemanager.ui.main.home.main.favourite.FavouriteFragment;
-import com.example.filemanager.ui.main.home.main.folder.FolderFragment;
-import com.example.filemanager.ui.main.home.main.home.HomeFragment;
-import com.example.filemanager.ui.main.home.main.setting.SettingFragment;
+import com.example.filemanager.ui.main.main.favourite.FavouriteFragment;
+import com.example.filemanager.ui.main.main.folder.FolderFragment;
+import com.example.filemanager.ui.main.main.home.HomeFragment;
+import com.example.filemanager.ui.main.main.setting.SettingFragment;
 
 
 public class MainViewPagerAdapter extends FragmentStateAdapter {

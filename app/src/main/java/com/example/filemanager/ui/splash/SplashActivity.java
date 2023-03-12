@@ -7,7 +7,7 @@ import android.os.Bundle;
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.ActivitySplashBinding;
 import com.example.filemanager.ui.base.BaseBindingActivity;
-import com.example.filemanager.ui.main.home.MainActivity;
+import com.example.filemanager.ui.main.MainActivity;
 
 public class SplashActivity extends BaseBindingActivity<ActivitySplashBinding, SplashViewModel> {
     @Override

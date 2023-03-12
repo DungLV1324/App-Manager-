@@ -5,6 +5,10 @@ public class MessageEvent {
     private String stringValue = "";
     private int intValue = -1;
 
+    public MessageEvent(int typeEvent) {
+        this.typeEvent = typeEvent;
+    }
+
     public int getTypeEvent() {
         return typeEvent;
     }
