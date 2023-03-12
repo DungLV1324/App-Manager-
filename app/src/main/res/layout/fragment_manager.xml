@@ -161,6 +161,8 @@
             android:text="@string/data_saving_information"
             android:textColor="#C7C7C7"
             android:textSize="10sp"
+            android:background="@drawable/custom_ripple"
+
             app:layout_constraintBottom_toBottomOf="@+id/view_uninstall_apps"
             app:layout_constraintLeft_toLeftOf="@+id/im_chplay"
             app:layout_constraintRight_toRightOf="@+id/view_uninstall_apps"
@@ -210,6 +212,7 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="15dp"
             android:orientation="vertical"
+
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
             app:layout_constraintBottom_toTopOf="@+id/tv_see_more"
             app:layout_constraintLeft_toLeftOf="@id/tv_title_phone"
@@ -295,6 +298,8 @@
             android:text="@string/data_saving_information"
             android:textColor="#C7C7C7"
             android:textSize="10sp"
+            android:background="@drawable/custom_ripple"
+
             app:layout_constraintBottom_toBottomOf="@+id/view_review_individual_video"
             app:layout_constraintLeft_toLeftOf="@+id/im_chplay"
             app:layout_constraintRight_toRightOf="@+id/view_uninstall_apps"

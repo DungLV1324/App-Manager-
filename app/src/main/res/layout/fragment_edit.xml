@@ -16,6 +16,8 @@
         android:text="Favorites"
         android:textColor="#000000"
         android:textSize="14sp"
+        android:background="@drawable/custom_ripple"
+
         app:drawableLeftCompat="@drawable/star"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -31,6 +33,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="20dp"
+        android:background="@drawable/custom_ripple"
 
         android:fontFamily="@font/rb_regular"
         android:padding="20dp"
@@ -52,6 +55,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="20dp"
+        android:background="@drawable/custom_ripple"
 
         android:fontFamily="@font/rb_regular"
         android:padding="20dp"
@@ -75,6 +79,7 @@
         android:drawablePadding="20dp"
         android:fontFamily="@font/rb_regular"
         android:padding="20dp"
+        android:background="@drawable/custom_ripple"
 
         android:text="Copy"
         android:textColor="#000000"
@@ -98,6 +103,7 @@
         android:padding="20dp"
         android:text="Cut"
         android:textColor="#000000"
+        android:background="@drawable/custom_ripple"
 
         android:textSize="14sp"
         app:drawableLeftCompat="@drawable/ic_cut"
@@ -118,6 +124,7 @@
         android:fontFamily="@font/rb_regular"
         android:padding="20dp"
         android:text="Compress file"
+        android:background="@drawable/custom_ripple"
 
         android:textColor="#000000"
         android:textSize="14sp"
@@ -136,6 +143,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="20dp"
+        android:background="@drawable/custom_ripple"
 
         android:fontFamily="@font/rb_regular"
         android:padding="20dp"
@@ -156,6 +164,7 @@
         android:id="@+id/tv_open_with"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:background="@drawable/custom_ripple"
 
         android:drawablePadding="20dp"
         android:fontFamily="@font/rb_regular"
@@ -178,6 +187,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:drawablePadding="20dp"
+        android:background="@drawable/custom_ripple"
 
         android:fontFamily="@font/rb_regular"
         android:padding="20dp"
@@ -202,6 +212,7 @@
         android:fontFamily="@font/rb_regular"
         android:padding="20dp"
         android:text="Delete"
+        android:background="@drawable/custom_ripple"
 
         android:textColor="#000000"
         android:textSize="14sp"

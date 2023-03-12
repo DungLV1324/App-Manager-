@@ -25,6 +25,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="23dp"
+        android:background="@drawable/custom_ripple"
         android:src="@drawable/ic_x_black"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@id/tv_name"
@@ -99,6 +100,7 @@
         android:textSize="14sp"
         app:layout_constraintLeft_toLeftOf="@id/tv_type"
         app:layout_constraintTop_toBottomOf="@id/tv_android"
+        android:background="@drawable/custom_ripple"
 
         />
 
