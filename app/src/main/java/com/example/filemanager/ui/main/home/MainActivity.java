@@ -16,7 +16,7 @@ public class MainActivity extends BaseBindingActivity<ActivityMainBinding, MainV
 
     @Override
     public int getLayoutId() {
-        return R.layout.fragment_edit;
+        return R.layout.activity_main;
     }
 
     @Override
