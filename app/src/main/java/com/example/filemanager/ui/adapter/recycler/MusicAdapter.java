@@ -17,7 +17,8 @@ public class MusicAdapter extends BaseBindingAdapter<ItemMusicBinding> {
     public void setListMusic(List<Music> listMusic) {
         this.listMusic.clear();
         this.listMusic.addAll(listMusic);
-        notifyDataSetChanged();    }
+        notifyDataSetChanged();
+    }
 
     @Override
     public int layoutIdItem() {
