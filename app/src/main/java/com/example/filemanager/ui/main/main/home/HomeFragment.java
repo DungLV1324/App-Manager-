@@ -82,17 +82,17 @@ public class HomeFragment extends BaseBindingFragment<FragmentHomeBinding, HomeV
         binding.rcRecent.setAdapter(recentAdapter);
     }
     public void initData() {
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
-        listItemRecent.add(new Recent("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
+        listItemRecent.add(new Recent("The Batman.mp4", "8/3/2023 10:00  CH 100KB"));
         recentAdapter.setListItemRecent(listItemRecent);
 
     }
