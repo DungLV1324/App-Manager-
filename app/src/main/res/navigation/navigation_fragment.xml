@@ -18,42 +18,42 @@
         tools:layout="@layout/fragment_main" />
     <fragment
         android:id="@+id/fragment_video"
-        android:name="com.example.filemanager.ui.main.videos.VideosFragment"
+        android:name="com.example.filemanager.ui.main.category.videos.VideosFragment"
         android:label="FragmentVideo"
         tools:layout="@layout/fragment_video" />
     <fragment
         android:id="@+id/fragment_document"
-        android:name="com.example.filemanager.ui.main.document.DocumentFragment"
+        android:name="com.example.filemanager.ui.main.category.document.DocumentFragment"
         android:label="FragmentDocument"
         tools:layout="@layout/fragment_document" />
     <fragment
         android:id="@+id/fragment_music"
-        android:name="com.example.filemanager.ui.main.music.MusicFragment"
+        android:name="com.example.filemanager.ui.main.category.music.MusicFragment"
         android:label="FragmentMusic"
         tools:layout="@layout/fragment_music" />
     <fragment
         android:id="@+id/fragment_apk"
-        android:name="com.example.filemanager.ui.main.apk.ApkFragment"
+        android:name="com.example.filemanager.ui.main.category.apk.ApkFragment"
         android:label="FragmentAPK"
         tools:layout="@layout/fragment_apk" />
     <fragment
         android:id="@+id/fragment_download"
-        android:name="com.example.filemanager.ui.main.dowload.DownloadFragment"
+        android:name="com.example.filemanager.ui.main.category.dowload.DownloadFragment"
         android:label="FragmentDownload"
         tools:layout="@layout/fragment_download" />
     <fragment
         android:id="@+id/fragment_zip"
-        android:name="com.example.filemanager.ui.main.zip.ZipFragment"
+        android:name="com.example.filemanager.ui.main.category.zip.ZipFragment"
         android:label="FragmentZip"
         tools:layout="@layout/fragment_zip" />
     <fragment
         android:id="@+id/fragment_trash"
-        android:name="com.example.filemanager.ui.main.trash.TrashFragment"
+        android:name="com.example.filemanager.ui.main.category.trash.TrashFragment"
         android:label="FragmentTrash"
         tools:layout="@layout/fragment_trash" />
     <fragment
         android:id="@+id/fragment_image"
-        android:name="com.example.filemanager.ui.main.images.ImagesFragment"
+        android:name="com.example.filemanager.ui.main.category.images.ImagesFragment"
         android:label="FragmentImage"
         tools:layout="@layout/fragment_image" />
     <fragment

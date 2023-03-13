@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.document;
+package com.example.filemanager.ui.main.category.document;
 
 import com.example.filemanager.ui.base.BaseViewModel;
 

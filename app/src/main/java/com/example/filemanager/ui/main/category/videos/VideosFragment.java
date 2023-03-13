@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.videos;
+package com.example.filemanager.ui.main.category.videos;
 
 import android.os.Bundle;
 import android.view.View;
@@ -6,8 +6,6 @@ import android.view.View;
 import com.example.filemanager.R;
 import com.example.filemanager.databinding.FragmentVideoBinding;
 import com.example.filemanager.model.Video;
-import com.example.filemanager.model.Video;
-import com.example.filemanager.ui.adapter.recycler.VideoAdapter;
 import com.example.filemanager.ui.adapter.recycler.VideoAdapter;
 import com.example.filemanager.ui.base.BaseBindingFragment;
 

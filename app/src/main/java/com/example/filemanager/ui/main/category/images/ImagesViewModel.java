@@ -1,4 +1,4 @@
-package com.example.filemanager.ui.main.images;
+package com.example.filemanager.ui.main.category.images;
 
 import com.example.filemanager.ui.base.BaseViewModel;
 
