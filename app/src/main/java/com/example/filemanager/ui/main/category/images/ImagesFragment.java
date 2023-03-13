@@ -52,7 +52,7 @@ public class ImagesFragment extends BaseBindingFragment<FragmentImageBinding, Im
                     iSelect = false;
                     binding.listImageThumb.setVisibility(View.INVISIBLE);
                     binding.listImage.setVisibility(View.VISIBLE);
-                    
+
                 }else {
                     iSelect = true;
                     binding.listImageThumb.setVisibility(View.VISIBLE);
