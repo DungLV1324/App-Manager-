@@ -99,5 +99,21 @@
             app:layout_constraintLeft_toLeftOf="@id/im_back"
             app:layout_constraintRight_toRightOf="@id/im_menu"
             app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_image_thumb"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            android:background="@drawable/custom_ripple"
+            app:spanCount="2"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="@id/im_back"
+            app:layout_constraintRight_toRightOf="@id/im_menu"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
