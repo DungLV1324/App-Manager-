@@ -22,11 +22,12 @@
             android:layout_marginStart="7dp"
             android:paddingHorizontal="16dp"
             android:paddingVertical="10dp"
-            android:src="@drawable/ic_weechat"
+            android:src="@drawable/ic_document"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_name"
             app:layout_constraintTop_toTopOf="parent" />
+
 
         <TextView
             android:id="@+id/tv_name"

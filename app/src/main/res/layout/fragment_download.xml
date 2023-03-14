@@ -91,30 +91,28 @@
 
 
         <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/list_image_thumb"
+            android:id="@+id/list_download"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_ripple"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/list_video_thumb"
+            app:spanCount="2"
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_marginTop="16dp"
             android:background="@drawable/custom_ripple"
             android:orientation="vertical"
-            android:visibility="gone"
             app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:layout_constraintLeft_toLeftOf="@id/im_back"
-            app:layout_constraintRight_toRightOf="@id/im_menu"
             app:layout_constraintTop_toBottomOf="@id/tv_name"
-            app:spanCount="2" />
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/list_download"
-            android:layout_width="0dp"
-            android:layout_height="wrap_content"
-            android:layout_marginTop="10dp"
-            android:orientation="vertical"
-            android:background="@drawable/custom_ripple"
-
-            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintLeft_toLeftOf="@id/im_back"
-            app:layout_constraintRight_toRightOf="@id/im_menu"
-            app:layout_constraintTop_toBottomOf="@id/tv_name" />
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
