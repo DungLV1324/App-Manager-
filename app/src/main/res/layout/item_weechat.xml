@@ -10,28 +10,29 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_ripple_item"
+        android:background="@drawable/custom_ripple_setting"
         android:clickable="true"
         android:focusable="true"
-        android:paddingVertical="15dp">
+        android:paddingVertical="10dp">
 
         <ImageView
             android:id="@+id/im_preview"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginStart="7dp"
-            android:paddingHorizontal="16dp"
-            android:paddingVertical="10dp"
+            android:padding="5dp"
             android:src="@drawable/ic_weechat"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_name"
             app:layout_constraintTop_toTopOf="parent" />
 
+
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="4dp"
             android:fontFamily="@font/rb_regular"
             android:text="@string/_2022_05_20_17_png"
             android:textColor="#000000"
@@ -39,18 +40,19 @@
             app:layout_constraintBottom_toTopOf="@id/tv_date"
             app:layout_constraintLeft_toRightOf="@id/im_preview"
             app:layout_constraintRight_toLeftOf="@id/im_three_dots"
-            app:layout_constraintTop_toTopOf="@id/im_preview" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_date"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginTop="4dp"
             android:fontFamily="@font/roboto_medium"
+            android:paddingVertical="4dp"
             android:text="@string/_19_09_2022_1_11ch_665kb"
             android:textColor="#B4B4B4"
             android:textSize="10sp"
-            app:layout_constraintBottom_toBottomOf="@id/im_preview"
+
+            app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintLeft_toLeftOf="@id/tv_name"
             app:layout_constraintRight_toLeftOf="@id/im_three_dots"
             app:layout_constraintTop_toBottomOf="@+id/tv_name"
@@ -60,13 +62,14 @@
             android:id="@+id/im_three_dots"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-
             android:layout_marginEnd="12dp"
+            android:background="@drawable/custom_ripple_dot"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="6dp"
             android:src="@drawable/ic_dot3"
-            app:layout_constraintBottom_toBottomOf="@id/im_preview"
+            app:layout_constraintBottom_toBottomOf="@id/tv_date"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toTopOf="@id/im_preview" />
-
-
+            app:layout_constraintTop_toTopOf="@id/tv_name" />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
