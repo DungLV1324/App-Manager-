@@ -9,71 +9,97 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        tools:context=".ui.main.home.MainActivity">
+
+
 
         <TextView
-            android:id="@+id/tv_favorite"
+            android:id="@+id/tv_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
-            android:layout_marginTop="20dp"
+            android:layout_marginStart="24dp"
+            android:clickable="true"
+            android:focusable="true"
             android:fontFamily="@font/roboto_medium"
+            android:layout_marginTop="20dp"
             android:text="Favorite"
             android:textColor="#1B252D"
             android:textSize="16sp"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@+id/im_search"
+            app:layout_constraintRight_toLeftOf="@id/im_search"
             app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="24dp"
             android:layout_marginTop="20dp"
-            android:background="@drawable/custom_ripple"
-            android:drawablePadding="6dp"
+            android:layout_marginStart="24dp"
             android:fontFamily="@font/roboto_medium"
             android:text="@string/last_edited_by_me"
+            android:drawablePadding="6dp"
             android:textColor="#1B252D"
             android:textSize="12sp"
+            android:focusable="true"
             app:drawableRightCompat="@drawable/ic_solid"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/tv_favorite"
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
             />
-
-
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rc_favorite"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
-            app:layout_constraintBottom_toBottomOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/tv_name"
-            app:spanCount="2" />
 
         <ImageView
             android:id="@+id/im_menu"
             android:layout_width="wrap_content"
+            android:background="@drawable/custom_ripple"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:layout_marginEnd="16dp"
             android:src="@drawable/ic_menu"
+            android:layout_marginEnd="16dp"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
 
         <ImageView
             android:id="@+id/im_search"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:layout_height="wrap_content"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/custom_ripple"
+            android:clickable="true"
+            android:focusable="true"
+            android:background="?android:attr/selectableItemBackground"
             android:src="@drawable/ic_search"
-            app:layout_constraintLeft_toRightOf="@id/tv_favorite"
+            app:layout_constraintLeft_toRightOf="@id/tv_title"
             app:layout_constraintRight_toLeftOf="@id/im_menu"
             app:layout_constraintTop_toTopOf="parent" />
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rc_favorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.StaggeredGridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            />
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/rc_favorite_thumb"
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+
+            android:layout_marginTop="16dp"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:spanCount="2"
+            />
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>

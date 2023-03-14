@@ -1,18 +1,12 @@
 package com.example.filemanager.model;
 
-public class Favorrite {
+public class FavoriteThumb {
     private String nameItemFavorite;
 
-    private String dateItemFavorite;
-
-    public Favorrite(String nameItemFavorite, String dateItemFavorite) {
+    public FavoriteThumb(String nameItemFavorite) {
         this.nameItemFavorite = nameItemFavorite;
-        this.dateItemFavorite = dateItemFavorite;
     }
 
-    public String getDateItemFavorite() {
-        return dateItemFavorite;
-    }
     public String getNameItemFavorite() {
         return nameItemFavorite;
     }
@@ -23,7 +17,7 @@ public class Favorrite {
 
     @Override
     public String toString() {
-        return "Favorrite{" +
+        return "FavoriteThumb{" +
                 "nameItemFavorite='" + nameItemFavorite + '\'' +
                 '}';
     }

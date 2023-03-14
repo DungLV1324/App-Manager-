@@ -3,6 +3,7 @@ package com.example.filemanager.ui.adapter.recycler;
 import androidx.annotation.NonNull;
 
 import com.example.filemanager.R;
+import com.example.filemanager.databinding.ItemFavoriteBinding;
 import com.example.filemanager.databinding.ItemFavorritThumbBinding;
 import com.example.filemanager.model.Download;
 import com.example.filemanager.model.Favorrite;
@@ -11,7 +12,7 @@ import com.example.filemanager.ui.base.BaseBindingAdapter;
 import java.util.LinkedList;
 import java.util.List;
 
-public class FavoriteAdapter extends BaseBindingAdapter<ItemFavorritThumbBinding> {
+public class FavoriteAdapter extends BaseBindingAdapter<ItemFavoriteBinding> {
 
     List<Favorrite> listItemFavorite =new LinkedList<>();
 
@@ -22,7 +23,7 @@ public class FavoriteAdapter extends BaseBindingAdapter<ItemFavorritThumbBinding
 
     @Override
     public int layoutIdItem() {
-        return R.layout.item_favorrit_thumb;
+        return R.layout.item_favorite;
     }
 
     @Override
@@ -31,7 +32,8 @@ public class FavoriteAdapter extends BaseBindingAdapter<ItemFavorritThumbBinding
     }
 
     @Override
-    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemFavorritThumbBinding>.BaseHolder<ItemFavorritThumbBinding> holder, int position) {
-        holder.binding.tvNameImage.setText(listItemFavorite.get(position).getNameItemFavorite());
-         }
+    public void onBindViewHolder(@NonNull BaseBindingAdapter<ItemFavoriteBinding>.BaseHolder<ItemFavoriteBinding> holder, int position) {
+        holder.binding.tvDate.setText(listItemFavorite.get(position).getDateItemFavorite());
+        holder.binding.tvName.setText(listItemFavorite.get(position).getNameItemFavorite());
+    }
 }

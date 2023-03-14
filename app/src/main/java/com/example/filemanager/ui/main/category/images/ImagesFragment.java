@@ -81,6 +81,8 @@ public class ImagesFragment extends BaseBindingFragment<FragmentImageBinding, Im
         listImage.add(new Image("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
         listImage.add(new Image("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
         listImage.add(new Image("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listImage.add(new Image("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
+        listImage.add(new Image("Backgroundcolorfuldobeautiful.png", "8/3/2023 10:00  CH 100KB"));
         imageAdapter.setListImage(listImage);
 
     } public void initAdapterImageThumb() {
