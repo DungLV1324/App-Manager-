@@ -13,14 +13,13 @@
         tools:context=".ui.main.home.MainActivity">
 
 
-
         <TextView
             android:id="@+id/tv_title"
             android:layout_width="0dp"
             android:layout_height="wrap_content"
             android:layout_marginStart="8dp"
-            android:fontFamily="@font/roboto_medium"
             android:layout_marginTop="20dp"
+            android:fontFamily="@font/roboto_medium"
             android:text="@string/video"
             android:textColor="#1B252D"
             android:textSize="16sp"
@@ -33,9 +32,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:drawablePadding="6dp"
             android:fontFamily="@font/roboto_medium"
             android:text="@string/last_edited_by_me"
-            android:drawablePadding="6dp"
             android:textColor="#1B252D"
             android:textSize="12sp"
             app:drawableRightCompat="@drawable/ic_solid"
@@ -47,20 +46,19 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:src="@drawable/ic_menu"
             android:layout_marginEnd="16dp"
             android:background="@drawable/custom_ripple"
+            android:src="@drawable/list_soid"
 
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
 
-
         <ImageView
             android:id="@+id/im_search"
             android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
             android:layout_marginEnd="20dp"
             android:background="@drawable/custom_ripple"
 
@@ -73,11 +71,11 @@
             android:id="@+id/im_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/custom_ripple"
-
             android:layout_marginStart="16dp"
+            android:layout_marginTop="20dp"
+
             android:layout_marginEnd="5dp"
+            android:background="@drawable/custom_ripple"
             android:src="@drawable/ic_back"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toLeftOf="@id/tv_title"
@@ -85,15 +83,27 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_video"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="16dp"
             android:background="@drawable/custom_ripple"
-
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintLeft_toLeftOf="@id/im_back"
-            app:layout_constraintRight_toRightOf="@id/im_menu"
+
             app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:visibility="invisible"
+            android:id="@+id/list_video_thumb"
+            app:spanCount="2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_ripple"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

@@ -10,7 +10,7 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/custom_ripple_item"
+        android:background="@drawable/custom_ripple_setting"
         android:clickable="true"
         android:focusable="true"
         android:padding="10dp">
@@ -41,6 +41,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:src="@drawable/ic_dot3"
+            android:background="@drawable/custom_ripple_dot"
+            android:clickable="true"
+            android:focusable="true"
             app:layout_constraintBottom_toBottomOf="@id/tv_name_image"
             app:layout_constraintLeft_toRightOf="@id/tv_name_image"
             app:layout_constraintRight_toRightOf="parent"
