@@ -15,7 +15,6 @@ import java.util.List;
 public class FavoriteAdapter extends BaseBindingAdapter<ItemFavoriteBinding> {
 
     List<Favorrite> listItemFavorite =new LinkedList<>();
-
     public void setListItemFavorite(List<Favorrite> listItemFavorite) {
         this.listItemFavorite.clear();
         this.listItemFavorite.addAll(listItemFavorite);

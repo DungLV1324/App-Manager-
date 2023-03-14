@@ -10,11 +10,10 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:paddingVertical="15dp"
         android:background="@drawable/custom_ripple_item"
         android:clickable="true"
         android:focusable="true"
-        >
+        android:paddingVertical="15dp">
 
         <ImageView
             android:id="@+id/im_preview"
@@ -33,19 +32,20 @@
         <TextView
             android:id="@+id/tv_name"
             android:layout_width="0dp"
-            app:layout_constraintRight_toLeftOf="@id/im_three_dots"            android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             android:fontFamily="@font/rb_regular"
             android:text="@string/_2022_05_20_17_png"
             android:textColor="#000000"
             android:textSize="12sp"
             app:layout_constraintBottom_toTopOf="@id/tv_date"
             app:layout_constraintLeft_toRightOf="@id/im_preview"
+            app:layout_constraintRight_toLeftOf="@id/im_three_dots"
             app:layout_constraintTop_toTopOf="@id/im_preview" />
 
         <TextView
             android:id="@+id/tv_date"
             android:layout_width="0dp"
-            app:layout_constraintRight_toLeftOf="@id/im_three_dots"            android:layout_height="wrap_content"
+            android:layout_height="wrap_content"
             android:layout_marginTop="4dp"
             android:fontFamily="@font/roboto_medium"
             android:text="@string/_19_09_2022_1_11ch_665kb"
@@ -53,6 +53,7 @@
             android:textSize="10sp"
             app:layout_constraintBottom_toBottomOf="@id/im_preview"
             app:layout_constraintLeft_toLeftOf="@id/tv_name"
+            app:layout_constraintRight_toLeftOf="@id/im_three_dots"
             app:layout_constraintTop_toBottomOf="@+id/tv_name"
             tools:ignore="SmallSp" />
 

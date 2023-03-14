@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<layout xmlns:android="http://schemas.android.com/apk/res/android">
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <data>
 
@@ -8,6 +9,105 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="48dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="@string/trash"
+            android:textColor="#1B252D"
+            android:textSize="16sp"
+
+            app:layout_constraintLeft_toRightOf="@id/im_back"
+            app:layout_constraintRight_toLeftOf="@id/im_search"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/im_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/custom_ripple"
+            android:src="@drawable/ic_search"
+            app:layout_constraintLeft_toRightOf="@id/tv_title"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <!--        <ImageView-->
+        <!--            android:id="@+id/im_menu"-->
+        <!--            android:layout_width="wrap_content"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="20dp"-->
+        <!--            android:src="@drawable/ic_menu"-->
+        <!--            android:background="@drawable/custom_ripple"-->
+        <!--            android:layout_marginEnd="16dp"-->
+        <!--            app:layout_constraintRight_toRightOf="parent"-->
+        <!--            app:layout_constraintTop_toTopOf="parent" />-->
+
+        <ImageView
+            android:id="@+id/im_trash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/ic_trash"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_name"
+            app:layout_constraintTop_toBottomOf="@id/im_back" />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto_medium"
+            android:text="Items are deleted forever after 30 days"
+            android:textColor="#1B252D"
+            android:textSize="12sp"
+            app:layout_constraintLeft_toRightOf="@id/im_trash"
+            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+
+
+        <ImageView
+            android:id="@+id/im_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="5dp"
+            android:background="@drawable/custom_ripple"
+            android:src="@drawable/ic_back"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toLeftOf="@id/tv_title"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/im_menu"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:src="@drawable/ic_menu"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/im_search" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_document"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_ripple"
+            android:orientation="vertical"
+            app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+            app:layout_constraintLeft_toLeftOf="@id/im_back"
+            app:layout_constraintRight_toRightOf="@id/im_search"
+            app:layout_constraintTop_toBottomOf="@id/tv_name" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>

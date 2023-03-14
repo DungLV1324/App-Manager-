@@ -12,7 +12,8 @@
         android:layout_height="wrap_content"
         android:background="@drawable/custom_ripple_item"
         android:clickable="true"
-        android:focusable="true"        android:paddingVertical="15dp">
+        android:focusable="true"
+        android:paddingVertical="15dp">
 
         <ImageView
             android:id="@+id/im_preview"
