@@ -47,7 +47,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
-            android:src="@drawable/ic_menu"
+            android:src="@drawable/list_soid"
             android:layout_marginEnd="16dp"
             android:background="@drawable/custom_ripple"
             app:layout_constraintRight_toRightOf="parent"
@@ -85,15 +85,26 @@
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_zip"
-            android:layout_width="0dp"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:background="@drawable/custom_ripple"
-
             android:orientation="vertical"
             app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
-            app:layout_constraintLeft_toLeftOf="@id/im_back"
-            app:layout_constraintRight_toRightOf="@id/im_menu"
             app:layout_constraintTop_toBottomOf="@id/tv_name" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_zip_thumb"
+            android:visibility="invisible"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/custom_ripple"
+            android:orientation="vertical"
+            app:spanCount="2"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
