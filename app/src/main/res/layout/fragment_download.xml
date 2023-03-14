@@ -34,35 +34,42 @@
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
             android:background="@drawable/custom_ripple"
-            android:fontFamily="@font/roboto_medium"
-            android:text="@string/last_edited_by_me"
             android:drawablePadding="6dp"
+            android:fontFamily="@font/roboto_medium"
+            android:paddingHorizontal="3dp"
+            android:text="@string/last_edited_by_me"
             android:textColor="#1B252D"
             android:textSize="12sp"
             app:drawableRightCompat="@drawable/ic_solid"
             app:layout_constraintLeft_toLeftOf="@id/im_back"
-            app:layout_constraintTop_toBottomOf="@id/tv_title" />
+            app:layout_constraintTop_toBottomOf="@id/tv_title"
+
+            />
 
         <ImageView
             android:id="@+id/im_menu"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:background="@drawable/custom_ripple"
-            android:src="@drawable/ic_menu"
-            android:layout_marginEnd="16dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginEnd="19dp"
+            android:background="@drawable/custom_ripple_setting"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
+            android:src="@drawable/list_soid"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
-
-
 
         <ImageView
             android:id="@+id/im_search"
             android:layout_width="wrap_content"
-            android:layout_marginTop="20dp"
             android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
             android:layout_marginEnd="20dp"
-            android:background="@drawable/custom_ripple"
+            android:background="@drawable/custom_ripple_setting"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="5dp"
             android:src="@drawable/ic_search"
             app:layout_constraintLeft_toRightOf="@id/tv_title"
             app:layout_constraintRight_toLeftOf="@id/im_menu"
@@ -72,15 +79,30 @@
             android:id="@+id/im_back"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="20dp"
-            android:layout_marginStart="16dp"
-            android:background="@drawable/custom_ripple"
-            android:layout_marginEnd="5dp"
+            android:layout_marginStart="19dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_ripple_setting"
+            android:clickable="true"
+            android:focusable="true"
+            android:padding="4dp"
             android:src="@drawable/ic_back"
             app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toLeftOf="@id/tv_title"
             app:layout_constraintTop_toTopOf="parent" />
 
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/list_image_thumb"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/custom_ripple"
+            android:orientation="vertical"
+            android:visibility="gone"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
+            app:layout_constraintLeft_toLeftOf="@id/im_back"
+            app:layout_constraintRight_toRightOf="@id/im_menu"
+            app:layout_constraintTop_toBottomOf="@id/tv_name"
+            app:spanCount="2" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/list_download"
